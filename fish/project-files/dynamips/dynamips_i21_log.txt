@@ -1,0 +1,42 @@
+Oct 26 17:21:47.577 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 17:21:47.577 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48518.
+Oct 26 17:21:47.590 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 17:21:47.590 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips 
+Oct 26 17:21:47.590 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips
+Oct 26 17:21:47.591 HYPERVISOR: exec_cmd: vm create PE2 12 c3745 
+Oct 26 17:21:47.690 VM: VM PE2 created.
+Oct 26 17:21:47.727 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5004 
+Oct 26 17:21:47.729 HYPERVISOR: exec_cmd: c3745 get_mac_addr PE2 
+Oct 26 17:21:47.731 HYPERVISOR: exec_cmd: vm set_ios PE2 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 17:21:47.732 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5004 
+Oct 26 17:21:47.734 HYPERVISOR: exec_cmd: vm set_nvram PE2 256 
+Oct 26 17:21:47.735 HYPERVISOR: exec_cmd: c3745 set_mac_addr PE2 c40c.764d.0000 
+Oct 26 17:21:47.736 HYPERVISOR: exec_cmd: vm set_disk0 PE2 0 
+Oct 26 17:21:47.738 HYPERVISOR: exec_cmd: vm set_ram PE2 256 
+Oct 26 17:21:47.740 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:21:47.741 HYPERVISOR: exec_cmd: vm set_idle_pc PE2 0x62ce7fc4 
+Oct 26 17:21:47.743 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:21:47.748 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 1 0 NM-4T 
+Oct 26 17:21:47.756 HYPERVISOR: exec_cmd: vm set_config PE2 configs/i12_startup-config.cfg 
+Oct 26 17:21:47.932 HYPERVISOR: exec_cmd: nio create_udp udp-923157c2-a0f1-4b7f-8cd7-a6f9b5f85811 10001 127.0.0.1 10000 
+Oct 26 17:21:47.933 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 0 udp-923157c2-a0f1-4b7f-8cd7-a6f9b5f85811 
+Oct 26 17:21:47.934 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:21:48.089 HYPERVISOR: exec_cmd: nio create_udp udp-c1fb2c7b-f9f7-433d-b9b9-08ceb3e1e4e9 10013 127.0.0.1 10012 
+Oct 26 17:21:48.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 1 udp-c1fb2c7b-f9f7-433d-b9b9-08ceb3e1e4e9 
+Oct 26 17:21:48.093 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:23:31.424 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Oct 26 17:23:31.436 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 17:23:31.437 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:23:31.449 HYPERVISOR: exec_cmd: vm start PE2 
+Oct 26 17:59:07.921 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Oct 26 17:59:08.592 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:59:08.596 HYPERVISOR: exec_cmd: vm stop PE2 
+Oct 26 17:59:08.692 VM: VM PE2 shutdown.
+Oct 26 17:59:08.693 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Oct 26 17:59:10.161 HYPERVISOR: exec_cmd: vm get_status PE2 
+Oct 26 17:59:10.168 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Oct 26 17:59:10.178 HYPERVISOR: exec_cmd: vm delete PE2 
+Oct 26 17:59:10.178 VM: VM PE2 destroyed.
+Oct 26 17:59:10.208 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:59:10.551 HYPERVISOR: Stopped.
+Oct 26 17:59:10.551 GENERAL: reset done.

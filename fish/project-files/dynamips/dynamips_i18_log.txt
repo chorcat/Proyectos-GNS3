@@ -1,0 +1,39 @@
+Oct 26 17:21:47.570 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 17:21:47.570 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46882.
+Oct 26 17:21:47.586 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 17:21:47.588 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips 
+Oct 26 17:21:47.588 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips
+Oct 26 17:21:47.589 HYPERVISOR: exec_cmd: vm create CE2 9 c3745 
+Oct 26 17:21:47.699 VM: VM CE2 created.
+Oct 26 17:21:47.728 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE2 5001 
+Oct 26 17:21:47.729 HYPERVISOR: exec_cmd: c3745 get_mac_addr CE2 
+Oct 26 17:21:47.731 HYPERVISOR: exec_cmd: vm set_ios CE2 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 17:21:47.732 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE2 5001 
+Oct 26 17:21:47.734 HYPERVISOR: exec_cmd: vm set_nvram CE2 256 
+Oct 26 17:21:47.735 HYPERVISOR: exec_cmd: c3745 set_mac_addr CE2 c409.7409.0000 
+Oct 26 17:21:47.736 HYPERVISOR: exec_cmd: vm set_disk0 CE2 0 
+Oct 26 17:21:47.738 HYPERVISOR: exec_cmd: vm set_ram CE2 256 
+Oct 26 17:21:47.740 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:21:47.742 HYPERVISOR: exec_cmd: vm set_idle_pc CE2 0x62ce7fc4 
+Oct 26 17:21:47.743 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:21:47.748 HYPERVISOR: exec_cmd: vm slot_add_binding CE2 1 0 NM-4T 
+Oct 26 17:21:47.756 HYPERVISOR: exec_cmd: vm set_config CE2 configs/i9_startup-config.cfg 
+Oct 26 17:21:47.919 HYPERVISOR: exec_cmd: nio create_udp udp-734b8800-d97f-4003-a267-77a18dd6dc1e 10003 127.0.0.1 10005 
+Oct 26 17:21:47.920 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE2 1 0 udp-734b8800-d97f-4003-a267-77a18dd6dc1e 
+Oct 26 17:21:47.920 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:23:33.369 HYPERVISOR: exec_cmd: vm set_ghost_status CE2 2 
+Oct 26 17:23:33.381 HYPERVISOR: exec_cmd: vm set_ghost_file CE2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 17:23:33.395 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:23:33.407 HYPERVISOR: exec_cmd: vm start CE2 
+Oct 26 17:59:07.866 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 26 17:59:08.662 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:59:08.664 HYPERVISOR: exec_cmd: vm stop CE2 
+Oct 26 17:59:08.697 VM: VM CE2 shutdown.
+Oct 26 17:59:08.702 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 26 17:59:10.163 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 26 17:59:10.169 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 26 17:59:10.188 HYPERVISOR: exec_cmd: vm delete CE2 
+Oct 26 17:59:10.188 VM: VM CE2 destroyed.
+Oct 26 17:59:10.209 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:59:10.303 HYPERVISOR: Stopped.
+Oct 26 17:59:10.303 GENERAL: reset done.

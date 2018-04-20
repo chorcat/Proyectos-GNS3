@@ -1,0 +1,42 @@
+Oct 26 17:21:47.800 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 17:21:47.800 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54361.
+Oct 26 17:21:47.818 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 17:21:47.819 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips 
+Oct 26 17:21:47.819 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/fish/project-files/dynamips
+Oct 26 17:21:47.819 HYPERVISOR: exec_cmd: vm create P3 14 c3745 
+Oct 26 17:21:47.915 VM: VM P3 created.
+Oct 26 17:21:47.919 HYPERVISOR: exec_cmd: vm set_con_tcp_port P3 5006 
+Oct 26 17:21:47.920 HYPERVISOR: exec_cmd: c3745 get_mac_addr P3 
+Oct 26 17:21:47.921 HYPERVISOR: exec_cmd: vm set_ios P3 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 17:21:47.925 HYPERVISOR: exec_cmd: vm set_con_tcp_port P3 5006 
+Oct 26 17:21:47.926 HYPERVISOR: exec_cmd: vm set_nvram P3 256 
+Oct 26 17:21:47.926 HYPERVISOR: exec_cmd: c3745 set_mac_addr P3 c40e.76a6.0000 
+Oct 26 17:21:47.927 HYPERVISOR: exec_cmd: vm set_disk0 P3 0 
+Oct 26 17:21:47.932 HYPERVISOR: exec_cmd: vm set_ram P3 256 
+Oct 26 17:21:47.934 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:21:47.935 HYPERVISOR: exec_cmd: vm set_idle_pc P3 0x62ce7fc4 
+Oct 26 17:21:47.943 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:21:47.947 HYPERVISOR: exec_cmd: vm slot_add_binding P3 1 0 NM-4T 
+Oct 26 17:21:47.951 HYPERVISOR: exec_cmd: vm set_config P3 configs/i14_startup-config.cfg 
+Oct 26 17:21:48.064 HYPERVISOR: exec_cmd: nio create_udp udp-1cbbf9e8-d42c-4b3d-bf56-a88f3ab49ea8 10011 127.0.0.1 10010 
+Oct 26 17:21:48.065 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 1 0 udp-1cbbf9e8-d42c-4b3d-bf56-a88f3ab49ea8 
+Oct 26 17:21:48.065 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:21:48.091 HYPERVISOR: exec_cmd: nio create_udp udp-5642873b-87d2-4e79-b4b7-c2085609a552 10012 127.0.0.1 10013 
+Oct 26 17:21:48.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 1 1 udp-5642873b-87d2-4e79-b4b7-c2085609a552 
+Oct 26 17:21:48.093 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:23:31.451 HYPERVISOR: exec_cmd: vm set_ghost_status P3 2 
+Oct 26 17:23:31.469 HYPERVISOR: exec_cmd: vm set_ghost_file P3 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 17:23:31.470 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:23:31.483 HYPERVISOR: exec_cmd: vm start P3 
+Oct 26 17:59:07.831 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 26 17:59:08.594 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:59:08.599 HYPERVISOR: exec_cmd: vm stop P3 
+Oct 26 17:59:08.704 VM: VM P3 shutdown.
+Oct 26 17:59:08.713 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 26 17:59:10.164 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 26 17:59:10.170 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 26 17:59:10.198 HYPERVISOR: exec_cmd: vm delete P3 
+Oct 26 17:59:10.198 VM: VM P3 destroyed.
+Oct 26 17:59:10.211 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:59:10.330 HYPERVISOR: Stopped.
+Oct 26 17:59:10.330 GENERAL: reset done.
