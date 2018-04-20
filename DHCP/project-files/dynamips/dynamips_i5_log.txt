@@ -1,0 +1,26 @@
+Oct 01 10:49:51.503 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 01 10:49:51.504 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58124.
+Oct 01 10:49:51.516 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 01 10:49:51.520 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Borja\GNS3\projects\DHCP\project-files\dynamips 
+Oct 01 10:49:51.520 GENERAL: working_dir=C:\Users\Borja\GNS3\projects\DHCP\project-files\dynamips
+Oct 01 10:49:51.524 HYPERVISOR: exec_cmd: vm create ESW1 5 c3745 
+Oct 01 10:49:51.525 VM: VM ESW1 created.
+Oct 01 10:49:51.528 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5001 
+Oct 01 10:49:51.531 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW1 
+Oct 01 10:49:51.535 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 01 10:49:51.539 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 01 10:49:51.542 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60aa1da0 
+Oct 01 10:49:51.546 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Oct 01 10:49:51.550 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Oct 01 10:49:51.553 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Oct 01 10:49:51.557 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+Oct 01 10:49:51.561 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 01 10:49:51.565 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Oct 01 10:49:51.573 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i5_startup-config.cfg 
+Oct 01 10:51:10.043 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 01 10:51:10.047 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 01 10:51:10.051 HYPERVISOR: exec_cmd: vm delete ESW1 
+Oct 01 10:51:10.051 VM: VM ESW1 destroyed.
+Oct 01 10:51:10.058 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 01 10:51:10.059 HYPERVISOR: Stopped.
+Oct 01 10:51:10.059 GENERAL: reset done.

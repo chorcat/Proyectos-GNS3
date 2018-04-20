@@ -1,0 +1,33 @@
+Oct 08 11:08:41.158 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 11:08:41.159 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 50890.
+Oct 08 11:08:41.164 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 11:08:41.169 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\dynamips 
+Oct 08 11:08:41.250 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\dynamips
+Oct 08 11:08:41.253 HYPERVISOR: exec_cmd: vm create AUTOIDLEPC 3 c7200 
+Oct 08 11:08:41.254 VM: VM AUTOIDLEPC created.
+Oct 08 11:08:41.258 HYPERVISOR: exec_cmd: vm set_con_tcp_port AUTOIDLEPC 5000 
+Oct 08 11:08:41.262 HYPERVISOR: exec_cmd: c7200 get_mac_addr AUTOIDLEPC 
+Oct 08 11:08:41.267 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:08:41.270 HYPERVISOR: exec_cmd: vm slot_add_binding AUTOIDLEPC 0 0 C7200-IO-FE 
+Oct 08 11:08:41.275 HYPERVISOR: exec_cmd: vm set_ram AUTOIDLEPC 512 
+Oct 08 11:08:41.279 HYPERVISOR: exec_cmd: vm set_ios AUTOIDLEPC D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 08 11:08:41.300 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:08:41.305 HYPERVISOR: exec_cmd: vm set_idle_pc AUTOIDLEPC 0x0 
+Oct 08 11:08:41.309 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:08:41.314 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:08:41.318 HYPERVISOR: exec_cmd: vm start AUTOIDLEPC 
+Oct 08 11:09:01.759 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:09:01.763 HYPERVISOR: exec_cmd: vm get_idle_pc_prop AUTOIDLEPC 0 
+Oct 08 11:09:11.872 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:09:11.875 HYPERVISOR: exec_cmd: vm set_idle_pc_online AUTOIDLEPC 0 0x61d99154 
+Oct 08 11:09:11.879 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Oct 08 11:09:14.888 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+Oct 08 11:09:14.913 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:09:14.928 HYPERVISOR: exec_cmd: vm stop AUTOIDLEPC 
+Oct 08 11:09:15.094 VM: VM AUTOIDLEPC shutdown.
+Oct 08 11:09:15.113 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+Oct 08 11:09:15.117 HYPERVISOR: exec_cmd: vm delete AUTOIDLEPC 
+Oct 08 11:09:15.117 VM: VM AUTOIDLEPC destroyed.
+Oct 08 11:09:15.125 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 08 11:09:15.188 HYPERVISOR: Stopped.
+Oct 08 11:09:15.188 GENERAL: reset done.

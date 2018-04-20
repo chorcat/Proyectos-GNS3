@@ -1,0 +1,56 @@
+Oct 15 16:41:44.399 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 15 16:41:44.400 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 62704.
+Oct 15 16:41:44.409 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 15 16:41:44.414 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\BGP_BASICO\project-files\dynamips 
+Oct 15 16:41:44.414 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\BGP_BASICO\project-files\dynamips
+Oct 15 16:41:44.419 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Oct 15 16:41:44.419 VM: VM R3 created.
+Oct 15 16:41:44.423 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Oct 15 16:41:44.427 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Oct 15 16:41:44.431 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Oct 15 16:41:44.435 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Oct 15 16:41:44.439 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 15 16:41:44.443 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 NM-1FE-TX 
+Oct 15 16:41:44.447 HYPERVISOR: exec_cmd: vm set_ios R3 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 15 16:41:44.452 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 15 16:41:44.456 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1FE-TX 
+Oct 15 16:41:44.460 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 15 16:41:44.464 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 15 16:41:44.468 HYPERVISOR: exec_cmd: vm slot_add_binding R3 4 0 NM-1FE-TX 
+Oct 15 16:41:44.472 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 15 16:41:44.476 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60aa311c 
+Oct 15 16:41:44.481 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Oct 15 16:41:44.485 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 15 16:41:44.489 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Oct 15 16:41:44.496 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Oct 15 16:41:56.542 HYPERVISOR: exec_cmd: vm rename R3 BORDER_1 
+Oct 15 16:42:16.978 HYPERVISOR: exec_cmd: nio create_udp udp-6d1ad959-02e2-4e6b-ba1c-34152e2a0e00 10001 192.168.47.1 10000 
+Oct 15 16:42:16.986 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BORDER_1 0 1 udp-6d1ad959-02e2-4e6b-ba1c-34152e2a0e00 
+Oct 15 16:42:16.993 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 16:42:19.550 HYPERVISOR: exec_cmd: nio create_udp udp-ae416db8-f40f-47e2-b588-358a7c1ecdf2 10002 192.168.47.1 10003 
+Oct 15 16:42:19.561 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BORDER_1 0 0 udp-ae416db8-f40f-47e2-b588-358a7c1ecdf2 
+Oct 15 16:42:19.569 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 16:45:26.247 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 16:45:29.015 HYPERVISOR: exec_cmd: vm set_ghost_status BORDER_1 2 
+Oct 15 16:45:29.024 HYPERVISOR: exec_cmd: vm set_ghost_file BORDER_1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 15 16:45:29.029 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 16:45:29.036 HYPERVISOR: exec_cmd: vm start BORDER_1 
+Oct 15 17:28:57.537 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 17:28:57.554 HYPERVISOR: exec_cmd: vm stop BORDER_1 
+Oct 15 17:28:57.723 VM: VM BORDER_1 shutdown.
+Oct 15 17:28:57.749 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 17:29:00.983 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 17:33:10.114 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 17:33:10.130 HYPERVISOR: exec_cmd: vm start BORDER_1 
+Oct 15 17:35:47.804 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 17:35:47.820 HYPERVISOR: exec_cmd: vm stop BORDER_1 
+Oct 15 17:35:47.929 VM: VM BORDER_1 shutdown.
+Oct 15 17:35:47.933 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 18:25:57.106 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 18:26:05.199 HYPERVISOR: exec_cmd: vm get_status BORDER_1 
+Oct 15 18:26:05.215 HYPERVISOR: exec_cmd: vm extract_config BORDER_1 
+Oct 15 18:26:05.237 HYPERVISOR: exec_cmd: vm delete BORDER_1 
+Oct 15 18:26:05.237 VM: VM BORDER_1 destroyed.
+Oct 15 18:26:05.254 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 15 18:26:05.751 HYPERVISOR: Stopped.
+Oct 15 18:26:05.751 GENERAL: reset done.

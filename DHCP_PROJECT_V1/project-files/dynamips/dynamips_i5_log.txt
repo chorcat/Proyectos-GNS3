@@ -1,0 +1,119 @@
+Oct 08 11:09:42.422 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 11:09:42.423 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 50905.
+Oct 08 11:09:42.435 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 11:09:42.438 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\dynamips 
+Oct 08 11:09:42.439 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\dynamips
+Oct 08 11:09:42.442 HYPERVISOR: exec_cmd: vm create ESW1 5 c3745 
+Oct 08 11:09:42.443 VM: VM ESW1 created.
+Oct 08 11:09:42.447 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5001 
+Oct 08 11:09:42.451 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW1 
+Oct 08 11:09:42.455 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Oct 08 11:09:42.459 HYPERVISOR: exec_cmd: vm set_ios ESW1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 08 11:09:42.463 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Oct 08 11:09:42.468 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+Oct 08 11:09:42.471 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:09:42.475 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Oct 08 11:09:42.479 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:09:42.483 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60aa1da0 
+Oct 08 11:09:42.486 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Oct 08 11:09:42.494 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i5_startup-config.cfg 
+Oct 08 11:10:00.088 HYPERVISOR: exec_cmd: nio create_udp udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 10001 192.168.47.1 10000 
+Oct 08 11:10:00.093 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 
+Oct 08 11:10:00.097 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:10:03.143 HYPERVISOR: exec_cmd: nio create_udp udp-8de9fc6a-3f5d-4985-bd2f-5aefd47b4314 10003 192.168.47.1 10002 
+Oct 08 11:10:03.149 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-8de9fc6a-3f5d-4985-bd2f-5aefd47b4314 
+Oct 08 11:10:03.153 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:10:05.832 HYPERVISOR: exec_cmd: nio create_udp udp-f10156f0-d58c-4f4b-bb30-b54670845900 10005 192.168.47.1 10004 
+Oct 08 11:10:05.836 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-f10156f0-d58c-4f4b-bb30-b54670845900 
+Oct 08 11:10:05.840 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:10:09.222 HYPERVISOR: exec_cmd: nio create_udp udp-363f1c7a-33f8-4cb9-82b0-c2fb979efdef 10006 192.168.47.1 10007 
+Oct 08 11:10:09.233 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-363f1c7a-33f8-4cb9-82b0-c2fb979efdef 
+Oct 08 11:10:09.240 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:10:11.079 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Oct 08 11:10:11.101 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 08 11:10:11.120 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:10:11.134 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 08 11:20:57.771 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:20:57.779 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 08 11:20:58.106 VM: VM ESW1 shutdown.
+Oct 08 11:20:58.124 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 08 11:21:01.353 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:21:01.378 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 08 11:22:54.215 HYPERVISOR: exec_cmd: nio bind_filter udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 2 capture 
+Oct 08 11:22:54.219 HYPERVISOR: exec_cmd: nio setup_filter udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\captures\ESW1_FastEthernet1-1_to_PC1_Ethernet0.pcap 
+Oct 08 11:25:00.937 HYPERVISOR: exec_cmd: nio unbind_filter udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 2 
+Oct 08 11:26:18.865 HYPERVISOR: exec_cmd: nio bind_filter udp-363f1c7a-33f8-4cb9-82b0-c2fb979efdef 2 capture 
+Oct 08 11:26:18.869 HYPERVISOR: exec_cmd: nio setup_filter udp-363f1c7a-33f8-4cb9-82b0-c2fb979efdef 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\DHCP_PROJECT_V1\project-files\captures\ESW1_FastEthernet1-0_to_R1_FastEthernet0-0.pcap 
+Oct 08 11:26:52.907 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:26:52.922 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 1 
+Oct 08 11:26:52.939 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 1 
+Oct 08 11:26:52.943 HYPERVISOR: exec_cmd: nio delete udp-d01a6eac-2821-4f10-8a2c-42e330d890ea 
+Oct 08 11:26:53.372 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:26:53.383 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 5 
+Oct 08 11:26:53.404 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 5 
+Oct 08 11:26:53.409 HYPERVISOR: exec_cmd: nio delete udp-f10156f0-d58c-4f4b-bb30-b54670845900 
+Oct 08 11:26:53.748 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:26:53.757 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 3 
+Oct 08 11:26:53.771 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 3 
+Oct 08 11:26:53.775 HYPERVISOR: exec_cmd: nio delete udp-8de9fc6a-3f5d-4985-bd2f-5aefd47b4314 
+Oct 08 11:27:01.773 HYPERVISOR: exec_cmd: nio create_udp udp-46095b78-3bff-4422-aa5b-ea7c9d148ee0 10001 192.168.47.1 10000 
+Oct 08 11:27:01.778 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-46095b78-3bff-4422-aa5b-ea7c9d148ee0 
+Oct 08 11:27:01.782 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:27:01.786 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 1 
+Oct 08 11:27:31.277 HYPERVISOR: exec_cmd: nio create_udp udp-c885dad1-b0ec-433d-80de-a313ee984129 10003 192.168.47.1 10002 
+Oct 08 11:27:31.282 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-c885dad1-b0ec-433d-80de-a313ee984129 
+Oct 08 11:27:31.286 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:27:31.290 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 3 
+Oct 08 11:28:01.091 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:28:01.103 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 3 
+Oct 08 11:28:01.112 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 3 
+Oct 08 11:28:01.115 HYPERVISOR: exec_cmd: nio delete udp-c885dad1-b0ec-433d-80de-a313ee984129 
+Oct 08 11:28:03.682 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:28:03.690 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 1 
+Oct 08 11:28:03.708 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 1 
+Oct 08 11:28:03.711 HYPERVISOR: exec_cmd: nio delete udp-46095b78-3bff-4422-aa5b-ea7c9d148ee0 
+Oct 08 11:28:13.662 HYPERVISOR: exec_cmd: nio create_udp udp-ee97fa32-34a2-45e6-912a-61dcd2eee6cf 10001 192.168.47.1 10000 
+Oct 08 11:28:13.667 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-ee97fa32-34a2-45e6-912a-61dcd2eee6cf 
+Oct 08 11:28:13.671 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:28:13.674 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 2 
+Oct 08 11:28:21.127 HYPERVISOR: exec_cmd: nio create_udp udp-4651b379-c830-4615-a134-b53a2b81468e 10003 192.168.47.1 10002 
+Oct 08 11:28:21.132 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-4651b379-c830-4615-a134-b53a2b81468e 
+Oct 08 11:28:21.136 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:28:21.140 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 3 
+Oct 08 11:28:27.806 HYPERVISOR: exec_cmd: nio create_udp udp-3d369da5-722e-4756-9174-e888b5b24b56 10005 192.168.47.1 10004 
+Oct 08 11:28:27.812 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-3d369da5-722e-4756-9174-e888b5b24b56 
+Oct 08 11:28:27.815 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:28:27.819 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 5 
+Oct 08 11:30:14.457 HYPERVISOR: exec_cmd: nio create_udp udp-574f34f8-af1d-4f7e-9e76-6a42954f54af 10009 192.168.47.1 10008 
+Oct 08 11:30:14.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-574f34f8-af1d-4f7e-9e76-6a42954f54af 
+Oct 08 11:30:14.465 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:30:14.469 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 1 
+Oct 08 11:30:24.590 HYPERVISOR: exec_cmd: nio create_udp udp-218a5be0-8514-4784-9ae2-d060f8aff8f9 10011 192.168.47.1 10010 
+Oct 08 11:30:24.595 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-218a5be0-8514-4784-9ae2-d060f8aff8f9 
+Oct 08 11:30:24.606 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:30:24.610 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 4 
+Oct 08 11:30:31.799 HYPERVISOR: exec_cmd: nio create_udp udp-869a3abc-7a2b-4232-b046-99ba65f6b3dc 10013 192.168.47.1 10012 
+Oct 08 11:30:31.804 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 6 udp-869a3abc-7a2b-4232-b046-99ba65f6b3dc 
+Oct 08 11:30:31.808 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:30:31.813 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 6 
+Oct 08 11:30:41.133 HYPERVISOR: exec_cmd: nio create_udp udp-240ac2be-3d01-4560-b2c3-62ac8814cc81 10015 192.168.47.1 10014 
+Oct 08 11:30:41.138 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 7 udp-240ac2be-3d01-4560-b2c3-62ac8814cc81 
+Oct 08 11:30:41.142 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:30:41.146 HYPERVISOR: exec_cmd: vm slot_enable_nio ESW1 1 7 
+Oct 08 11:31:32.445 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:31:32.458 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 08 11:31:32.744 VM: VM ESW1 shutdown.
+Oct 08 11:31:32.748 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 08 11:31:33.902 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:31:33.921 HYPERVISOR: exec_cmd: vm start ESW1 
+Oct 08 11:34:55.546 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:34:55.564 HYPERVISOR: exec_cmd: vm stop ESW1 
+Oct 08 11:34:55.870 VM: VM ESW1 shutdown.
+Oct 08 11:34:55.874 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 08 11:35:02.945 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Oct 08 11:35:02.957 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Oct 08 11:35:02.968 HYPERVISOR: exec_cmd: vm delete ESW1 
+Oct 08 11:35:02.968 VM: VM ESW1 destroyed.
+Oct 08 11:35:02.984 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 08 11:35:03.439 HYPERVISOR: Stopped.
+Oct 08 11:35:03.450 GENERAL: reset done.
