@@ -1,0 +1,68 @@
+Oct 20 21:43:06.932 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 20 21:43:06.932 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 55667.
+Oct 20 21:43:06.947 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 21:43:06.951 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\MPLS_BGP\project-files\dynamips 
+Oct 20 21:43:06.951 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\MPLS_BGP\project-files\dynamips
+Oct 20 21:43:06.956 HYPERVISOR: exec_cmd: vm create R5 5 c3745 
+Oct 20 21:43:06.957 VM: VM R5 created.
+Oct 20 21:43:06.961 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Oct 20 21:43:06.965 HYPERVISOR: exec_cmd: c3745 get_mac_addr R5 
+Oct 20 21:43:06.969 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:06.974 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Oct 20 21:43:06.978 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:06.983 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Oct 20 21:43:06.987 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Oct 20 21:43:06.992 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:06.997 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60aa1da0 
+Oct 20 21:43:07.001 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Oct 20 21:43:07.006 HYPERVISOR: exec_cmd: vm set_ios R5 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 20 21:43:07.011 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:07.016 HYPERVISOR: exec_cmd: vm slot_add_binding R5 4 0 NM-1FE-TX 
+Oct 20 21:43:07.020 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Oct 20 21:43:07.025 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:07.029 HYPERVISOR: exec_cmd: vm slot_add_binding R5 3 0 NM-1FE-TX 
+Oct 20 21:43:07.034 HYPERVISOR: exec_cmd: vm set_ram R5 256 
+Oct 20 21:43:07.043 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Oct 20 21:43:32.077 HYPERVISOR: exec_cmd: nio create_udp udp-2ec19c08-c097-4182-8a1a-ca896afff5eb 10007 192.168.232.1 10006 
+Oct 20 21:43:32.084 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-2ec19c08-c097-4182-8a1a-ca896afff5eb 
+Oct 20 21:43:32.092 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:47.153 HYPERVISOR: exec_cmd: nio create_udp udp-ce2887ec-390e-408c-905d-09dccc7a8a78 10010 192.168.232.1 10011 
+Oct 20 21:43:47.168 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-ce2887ec-390e-408c-905d-09dccc7a8a78 
+Oct 20 21:43:47.172 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:55.899 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Oct 20 21:43:55.899 VM: VM Ghost created.
+Oct 20 21:43:55.914 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 20 21:43:55.924 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 20 21:43:55.928 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 20 21:43:55.933 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 20 21:43:55.940 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 21:43:55.990 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 20 21:43:56.779 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 21:43:56.785 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 20 21:43:56.847 VM: VM Ghost shutdown.
+Oct 20 21:43:56.850 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 20 21:43:56.850 VM: VM Ghost destroyed.
+Oct 20 21:43:56.862 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Oct 20 21:43:56.867 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 20 21:43:56.872 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:43:56.881 HYPERVISOR: exec_cmd: vm start R5 
+Oct 20 21:44:04.367 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 20 21:44:04.381 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 20 21:44:04.551 VM: VM R5 shutdown.
+Oct 20 21:44:04.568 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 20 21:44:11.124 HYPERVISOR: exec_cmd: vm rename R5 PE2 
+Oct 20 21:44:21.571 HYPERVISOR: exec_cmd: vm rename PE2 CE2 
+Oct 20 21:44:35.604 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 20 21:44:35.628 HYPERVISOR: exec_cmd: vm start CE2 
+Oct 20 21:45:56.784 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 20 21:55:35.543 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 20 21:55:35.556 HYPERVISOR: exec_cmd: vm stop CE2 
+Oct 20 21:55:35.825 VM: VM CE2 shutdown.
+Oct 20 21:55:35.831 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 20 21:55:36.822 HYPERVISOR: exec_cmd: vm get_status CE2 
+Oct 20 21:55:36.845 HYPERVISOR: exec_cmd: vm extract_config CE2 
+Oct 20 21:55:36.871 HYPERVISOR: exec_cmd: vm delete CE2 
+Oct 20 21:55:36.871 VM: VM CE2 destroyed.
+Oct 20 21:55:36.898 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 21:55:37.065 HYPERVISOR: Stopped.
+Oct 20 21:55:37.065 GENERAL: reset done.

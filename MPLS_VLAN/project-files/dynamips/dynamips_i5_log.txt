@@ -1,0 +1,54 @@
+Oct 19 16:11:39.025 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 19 16:11:39.025 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 59227.
+Oct 19 16:11:39.036 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 19 16:11:39.040 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\MPLS_VLAN\project-files\dynamips 
+Oct 19 16:11:39.040 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\MPLS_VLAN\project-files\dynamips
+Oct 19 16:11:39.044 HYPERVISOR: exec_cmd: vm create R5 5 c3745 
+Oct 19 16:11:39.045 VM: VM R5 created.
+Oct 19 16:11:39.049 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Oct 19 16:11:39.053 HYPERVISOR: exec_cmd: c3745 get_mac_addr R5 
+Oct 19 16:11:39.057 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:11:39.062 HYPERVISOR: exec_cmd: vm slot_add_binding R5 3 0 NM-1FE-TX 
+Oct 19 16:11:39.066 HYPERVISOR: exec_cmd: vm set_ram R5 256 
+Oct 19 16:11:39.071 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:11:39.075 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60aa1da0 
+Oct 19 16:11:39.079 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:11:39.083 HYPERVISOR: exec_cmd: vm slot_add_binding R5 4 0 NM-1FE-TX 
+Oct 19 16:11:39.087 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Oct 19 16:11:39.091 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Oct 19 16:11:39.096 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:11:39.100 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Oct 19 16:11:39.105 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:11:39.110 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Oct 19 16:11:39.114 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Oct 19 16:11:39.118 HYPERVISOR: exec_cmd: vm set_ios R5 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 19 16:11:39.126 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Oct 19 16:14:15.898 HYPERVISOR: exec_cmd: nio create_udp udp-89a128f0-f594-452f-b37a-fc896f0e53a3 10006 192.168.232.1 10007 
+Oct 19 16:14:15.909 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-89a128f0-f594-452f-b37a-fc896f0e53a3 
+Oct 19 16:14:15.916 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:14:28.751 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:14:28.758 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 1 0 
+Oct 19 16:14:28.763 HYPERVISOR: exec_cmd: nio delete udp-89a128f0-f594-452f-b37a-fc896f0e53a3 
+Oct 19 16:14:44.506 HYPERVISOR: exec_cmd: nio create_udp udp-017c3d38-0a41-4f34-966e-174257144e31 10011 192.168.232.1 10010 
+Oct 19 16:14:44.514 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-017c3d38-0a41-4f34-966e-174257144e31 
+Oct 19 16:14:44.522 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:14:51.489 HYPERVISOR: exec_cmd: nio create_udp udp-1879de40-da06-4c5f-8887-8c72514eb2f3 10014 192.168.232.1 10015 
+Oct 19 16:14:51.501 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-1879de40-da06-4c5f-8887-8c72514eb2f3 
+Oct 19 16:14:51.508 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 19 16:17:41.904 HYPERVISOR: exec_cmd: vm rename R5 P3 
+Oct 19 16:27:31.797 HYPERVISOR: exec_cmd: vm set_ghost_status P3 2 
+Oct 19 16:27:31.808 HYPERVISOR: exec_cmd: vm set_ghost_file P3 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 19 16:27:31.813 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 19 16:27:31.818 HYPERVISOR: exec_cmd: vm start P3 
+Oct 19 16:36:30.853 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 19 16:36:30.872 HYPERVISOR: exec_cmd: vm stop P3 
+Oct 19 16:36:31.100 VM: VM P3 shutdown.
+Oct 19 16:36:31.127 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 19 16:36:33.189 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 19 16:36:33.636 HYPERVISOR: exec_cmd: vm get_status P3 
+Oct 19 16:36:33.662 HYPERVISOR: exec_cmd: vm extract_config P3 
+Oct 19 16:36:33.691 HYPERVISOR: exec_cmd: vm delete P3 
+Oct 19 16:36:33.691 VM: VM P3 destroyed.
+Oct 19 16:36:33.725 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 19 16:36:33.814 HYPERVISOR: Stopped.
+Oct 19 16:36:33.814 GENERAL: reset done.
