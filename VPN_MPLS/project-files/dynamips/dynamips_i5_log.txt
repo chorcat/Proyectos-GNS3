@@ -1,0 +1,47 @@
+Oct 19 23:58:11.131 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 19 23:58:11.132 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 64602.
+Oct 19 23:58:11.719 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 19 23:58:11.734 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\VPN_MPLS\project-files\dynamips 
+Oct 19 23:58:11.854 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\VPN_MPLS\project-files\dynamips
+Oct 19 23:58:11.885 HYPERVISOR: exec_cmd: vm create CE1A 5 c3745 
+Oct 19 23:58:11.886 VM: VM CE1A created.
+Oct 19 23:58:11.911 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE1A 5004 
+Oct 19 23:58:11.932 HYPERVISOR: exec_cmd: c3745 get_mac_addr CE1A 
+Oct 19 23:58:11.955 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:11.976 HYPERVISOR: exec_cmd: vm set_idle_pc CE1A 0x60aa1da0 
+Oct 19 23:58:12.000 HYPERVISOR: exec_cmd: vm set_ram CE1A 256 
+Oct 19 23:58:12.020 HYPERVISOR: exec_cmd: vm set_disk0 CE1A 0 
+Oct 19 23:58:12.041 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:12.065 HYPERVISOR: exec_cmd: vm slot_add_binding CE1A 3 0 NM-1FE-TX 
+Oct 19 23:58:12.089 HYPERVISOR: exec_cmd: vm set_ios CE1A D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 19 23:58:12.112 HYPERVISOR: exec_cmd: vm set_exec_area CE1A 64 
+Oct 19 23:58:12.135 HYPERVISOR: exec_cmd: vm set_nvram CE1A 256 
+Oct 19 23:58:12.156 HYPERVISOR: exec_cmd: c3745 set_mac_addr CE1A c405.10d4.0000 
+Oct 19 23:58:12.185 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:12.206 HYPERVISOR: exec_cmd: vm slot_add_binding CE1A 4 0 NM-1FE-TX 
+Oct 19 23:58:12.234 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:12.260 HYPERVISOR: exec_cmd: vm slot_add_binding CE1A 1 0 NM-1FE-TX 
+Oct 19 23:58:12.285 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:12.310 HYPERVISOR: exec_cmd: vm slot_add_binding CE1A 2 0 NM-1FE-TX 
+Oct 19 23:58:12.339 HYPERVISOR: exec_cmd: vm set_config CE1A configs/i5_startup-config.cfg 
+Oct 19 23:58:13.050 HYPERVISOR: exec_cmd: nio create_udp udp-2c0c79fe-2a44-446a-8c81-bf9a52a7946f 10007 192.168.232.1 10006 
+Oct 19 23:58:13.070 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE1A 0 0 udp-2c0c79fe-2a44-446a-8c81-bf9a52a7946f 
+Oct 19 23:58:13.089 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:13.125 HYPERVISOR: exec_cmd: nio create_udp udp-a141ac0c-1999-42a4-82d7-5b90becdd1b8 10008 192.168.232.1 10009 
+Oct 19 23:58:13.158 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE1A 0 1 udp-a141ac0c-1999-42a4-82d7-5b90becdd1b8 
+Oct 19 23:58:13.196 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:17.108 HYPERVISOR: exec_cmd: vm set_ghost_status CE1A 2 
+Oct 19 23:58:17.117 HYPERVISOR: exec_cmd: vm set_ghost_file CE1A c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 19 23:58:17.122 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 19 23:58:17.130 HYPERVISOR: exec_cmd: vm start CE1A 
+Oct 20 00:02:21.570 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 20 00:02:21.599 HYPERVISOR: exec_cmd: vm stop CE1A 
+Oct 20 00:02:21.723 VM: VM CE1A shutdown.
+Oct 20 00:02:21.727 HYPERVISOR: exec_cmd: vm extract_config CE1A 
+Oct 20 00:02:22.543 HYPERVISOR: exec_cmd: vm get_status CE1A 
+Oct 20 00:02:22.593 HYPERVISOR: exec_cmd: vm extract_config CE1A 
+Oct 20 00:02:22.633 HYPERVISOR: exec_cmd: vm delete CE1A 
+Oct 20 00:02:22.633 VM: VM CE1A destroyed.
+Oct 20 00:02:22.685 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 00:02:23.074 HYPERVISOR: Stopped.
+Oct 20 00:02:23.074 GENERAL: reset done.

@@ -1,0 +1,62 @@
+Oct 20 16:58:08.585 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 20 16:58:08.586 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 54100.
+Oct 20 16:58:08.762 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 20 16:58:08.783 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\VPN_MPLS\project-files\dynamips 
+Oct 20 16:58:08.784 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\VPN_MPLS\project-files\dynamips
+Oct 20 16:58:08.816 HYPERVISOR: exec_cmd: vm create CE2B 8 c3745 
+Oct 20 16:58:08.817 VM: VM CE2B created.
+Oct 20 16:58:08.853 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE2B 5026 
+Oct 20 16:58:08.889 HYPERVISOR: exec_cmd: c3745 get_mac_addr CE2B 
+Oct 20 16:58:08.915 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:08.946 HYPERVISOR: exec_cmd: vm slot_add_binding CE2B 2 0 NM-1FE-TX 
+Oct 20 16:58:08.979 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE2B 5026 
+Oct 20 16:58:09.004 HYPERVISOR: exec_cmd: vm set_ram CE2B 256 
+Oct 20 16:58:09.042 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:09.069 HYPERVISOR: exec_cmd: vm slot_add_binding CE2B 4 0 NM-1FE-TX 
+Oct 20 16:58:09.094 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:09.129 HYPERVISOR: exec_cmd: vm set_idle_pc CE2B 0x60aa1da0 
+Oct 20 16:58:09.165 HYPERVISOR: exec_cmd: vm set_ios CE2B D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 20 16:58:09.189 HYPERVISOR: exec_cmd: vm set_exec_area CE2B 64 
+Oct 20 16:58:09.217 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:09.254 HYPERVISOR: exec_cmd: vm slot_add_binding CE2B 3 0 NM-1FE-TX 
+Oct 20 16:58:09.285 HYPERVISOR: exec_cmd: c3745 set_mac_addr CE2B c408.0378.0000 
+Oct 20 16:58:09.321 HYPERVISOR: exec_cmd: vm set_disk0 CE2B 0 
+Oct 20 16:58:09.387 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:09.449 HYPERVISOR: exec_cmd: vm slot_add_binding CE2B 1 0 NM-1FE-TX 
+Oct 20 16:58:09.526 HYPERVISOR: exec_cmd: vm set_nvram CE2B 256 
+Oct 20 16:58:09.559 HYPERVISOR: exec_cmd: vm set_config CE2B configs/i8_startup-config.cfg 
+Oct 20 16:58:09.847 HYPERVISOR: exec_cmd: nio create_udp udp-e7ab89f4-5f03-4d9e-9926-558c8677155b 10078 192.168.232.1 10079 
+Oct 20 16:58:09.878 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE2B 0 1 udp-e7ab89f4-5f03-4d9e-9926-558c8677155b 
+Oct 20 16:58:09.919 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:09.954 HYPERVISOR: exec_cmd: nio create_udp udp-e5871af4-1bd0-4cd0-a564-979a5a414591 10081 192.168.232.1 10080 
+Oct 20 16:58:09.973 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE2B 0 0 udp-e5871af4-1bd0-4cd0-a564-979a5a414591 
+Oct 20 16:58:09.983 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:13.543 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Oct 20 16:58:13.544 VM: VM Ghost created.
+Oct 20 16:58:13.562 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 20 16:58:13.576 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 20 16:58:13.581 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 20 16:58:13.585 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 20 16:58:13.590 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 16:58:13.613 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 20 16:58:15.045 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 20 16:58:15.052 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 20 16:58:15.263 VM: VM Ghost shutdown.
+Oct 20 16:58:15.266 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 20 16:58:15.266 VM: VM Ghost destroyed.
+Oct 20 16:58:15.280 HYPERVISOR: exec_cmd: vm set_ghost_status CE2B 2 
+Oct 20 16:58:15.285 HYPERVISOR: exec_cmd: vm set_ghost_file CE2B c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 20 16:58:15.290 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 16:58:15.307 HYPERVISOR: exec_cmd: vm start CE2B 
+Oct 20 17:06:21.301 HYPERVISOR: exec_cmd: vm extract_config CE2B 
+Oct 20 17:13:09.251 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 17:13:09.255 HYPERVISOR: exec_cmd: vm stop CE2B 
+Oct 20 17:13:09.371 VM: VM CE2B shutdown.
+Oct 20 17:13:09.386 HYPERVISOR: exec_cmd: vm extract_config CE2B 
+Oct 20 17:13:13.545 HYPERVISOR: exec_cmd: vm get_status CE2B 
+Oct 20 17:13:13.581 HYPERVISOR: exec_cmd: vm extract_config CE2B 
+Oct 20 17:13:13.634 HYPERVISOR: exec_cmd: vm delete CE2B 
+Oct 20 17:13:13.634 VM: VM CE2B destroyed.
+Oct 20 17:13:13.689 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 20 17:13:13.909 HYPERVISOR: Stopped.
+Oct 20 17:13:13.909 GENERAL: reset done.
