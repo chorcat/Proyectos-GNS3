@@ -1,0 +1,58 @@
+Sep 21 14:25:14.535 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Sep 21 14:25:14.535 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38972.
+Sep 21 14:25:14.545 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 21 14:25:14.546 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica1/project-files/dynamips 
+Sep 21 14:25:14.547 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica1/project-files/dynamips
+Sep 21 14:25:14.547 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Sep 21 14:25:14.552 VM: VM R2 created.
+Sep 21 14:25:14.553 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Sep 21 14:25:14.553 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Sep 21 14:25:14.554 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Sep 21 14:25:14.554 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Sep 21 14:25:14.554 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Sep 21 14:25:14.555 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:25:14.555 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x62ce7fc4 
+Sep 21 14:25:14.556 HYPERVISOR: exec_cmd: vm set_ios R2 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Sep 21 14:25:14.556 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:25:14.556 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Sep 21 14:25:14.562 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Sep 21 14:25:31.611 HYPERVISOR: exec_cmd: nio create_udp udp-1c9ed0a9-90bb-46bb-85ff-3750675a0dee 10001 127.0.0.1 10000 
+Sep 21 14:25:31.615 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-1c9ed0a9-90bb-46bb-85ff-3750675a0dee 
+Sep 21 14:25:31.616 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:25:34.482 HYPERVISOR: exec_cmd: nio create_udp udp-8bbee911-2594-4e94-96d9-47e860a9fbed 10003 127.0.0.1 10002 
+Sep 21 14:25:34.483 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-8bbee911-2594-4e94-96d9-47e860a9fbed 
+Sep 21 14:25:34.483 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:25:38.171 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Sep 21 14:25:38.237 VM: VM Ghost created.
+Sep 21 14:25:38.289 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Sep 21 14:25:38.290 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 21 14:25:38.290 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Sep 21 14:25:38.291 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Sep 21 14:25:38.291 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 21 14:25:38.318 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 21 14:26:17.565 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 21 14:26:17.566 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 21 14:26:18.537 VM: VM Ghost shutdown.
+Sep 21 14:26:18.538 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 21 14:26:18.539 VM: VM Ghost destroyed.
+Sep 21 14:26:18.682 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Sep 21 14:26:18.683 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Sep 21 14:26:18.683 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:26:18.700 HYPERVISOR: exec_cmd: vm start R2 
+Sep 21 14:29:05.733 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:29:05.733 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 0 1 
+Sep 21 14:29:05.737 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 1 
+Sep 21 14:29:05.737 HYPERVISOR: exec_cmd: nio delete udp-8bbee911-2594-4e94-96d9-47e860a9fbed 
+Sep 21 14:29:13.100 HYPERVISOR: exec_cmd: nio create_udp udp-5b47abf9-5810-42c2-9f0f-17555c447d2d 10005 127.0.0.1 10004 
+Sep 21 14:29:13.101 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-5b47abf9-5810-42c2-9f0f-17555c447d2d 
+Sep 21 14:29:13.101 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 14:29:13.102 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 1 0 
+Sep 21 15:21:28.049 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 21 15:21:28.052 HYPERVISOR: exec_cmd: vm stop R2 
+Sep 21 15:21:28.096 VM: VM R2 shutdown.
+Sep 21 15:21:28.101 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 21 15:21:28.132 HYPERVISOR: exec_cmd: vm delete R2 
+Sep 21 15:21:28.132 VM: VM R2 destroyed.
+Sep 21 15:21:28.137 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 21 15:21:28.545 HYPERVISOR: Stopped.
+Sep 21 15:21:28.545 GENERAL: reset done.
