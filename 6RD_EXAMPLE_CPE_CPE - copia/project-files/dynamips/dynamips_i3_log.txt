@@ -1,0 +1,54 @@
+Nov 19 14:15:34.940 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 14:15:34.941 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 65226.
+Nov 19 14:15:35.030 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 14:15:35.038 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE\project-files\dynamips 
+Nov 19 14:15:35.172 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE\project-files\dynamips
+Nov 19 14:15:35.188 HYPERVISOR: exec_cmd: vm create CPE1 4 c7200 
+Nov 19 14:15:35.189 VM: VM CPE1 created.
+Nov 19 14:15:35.210 HYPERVISOR: exec_cmd: vm set_con_tcp_port CPE1 5003 
+Nov 19 14:15:35.233 HYPERVISOR: exec_cmd: c7200 get_mac_addr CPE1 
+Nov 19 14:15:35.260 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.277 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-FE 
+Nov 19 14:15:35.290 HYPERVISOR: exec_cmd: vm set_ios CPE1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 14:15:35.309 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.324 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 1 0 PA-FE-TX 
+Nov 19 14:15:35.342 HYPERVISOR: exec_cmd: vm set_ram CPE1 512 
+Nov 19 14:15:35.356 HYPERVISOR: exec_cmd: vm set_exec_area CPE1 64 
+Nov 19 14:15:35.372 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.389 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 2 0 PA-FE-TX 
+Nov 19 14:15:35.406 HYPERVISOR: exec_cmd: vm set_nvram CPE1 512 
+Nov 19 14:15:35.423 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.441 HYPERVISOR: exec_cmd: vm set_idle_pc CPE1 0x61d99154 
+Nov 19 14:15:35.460 HYPERVISOR: exec_cmd: vm set_disk0 CPE1 0 
+Nov 19 14:15:35.483 HYPERVISOR: exec_cmd: c7200 set_mac_addr CPE1 ca04.144c.0000 
+Nov 19 14:15:35.511 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.532 HYPERVISOR: exec_cmd: vm slot_remove_binding CPE1 0 0 
+Nov 19 14:15:35.559 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.588 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-2FE 
+Nov 19 14:15:35.613 HYPERVISOR: exec_cmd: vm set_config CPE1 configs/i4_startup-config.cfg 
+Nov 19 14:15:35.892 HYPERVISOR: exec_cmd: nio create_udp udp-6fa620d2-7366-4857-beba-1ec9fa348f47 10005 192.168.232.1 10004 
+Nov 19 14:15:35.918 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 1 udp-6fa620d2-7366-4857-beba-1ec9fa348f47 
+Nov 19 14:15:35.947 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:15:35.984 HYPERVISOR: exec_cmd: nio create_udp udp-3c6e31a8-e13c-4266-b46b-967cfe961e97 10006 192.168.232.1 10007 
+Nov 19 14:15:36.005 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 0 udp-3c6e31a8-e13c-4266-b46b-967cfe961e97 
+Nov 19 14:15:36.019 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:26:15.016 HYPERVISOR: exec_cmd: vm set_ghost_status CPE1 2 
+Nov 19 14:26:15.025 HYPERVISOR: exec_cmd: vm set_ghost_file CPE1 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 19 14:26:15.030 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:26:15.040 HYPERVISOR: exec_cmd: vm start CPE1 
+Nov 19 14:26:20.904 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 14:26:25.573 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:26:25.582 HYPERVISOR: exec_cmd: vm stop CPE1 
+Nov 19 14:26:25.736 VM: VM CPE1 shutdown.
+Nov 19 14:26:25.743 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 14:26:34.181 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:26:34.196 HYPERVISOR: exec_cmd: vm start CPE1 
+Nov 19 14:40:29.494 HYPERVISOR: exec_cmd: nio bind_filter udp-3c6e31a8-e13c-4266-b46b-967cfe961e97 2 capture 
+Nov 19 14:40:29.498 HYPERVISOR: exec_cmd: nio setup_filter udp-3c6e31a8-e13c-4266-b46b-967cfe961e97 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE\project-files\captures\CPE1_FastEthernet0-0_to_R2_FastEthernet0-0.pcap 
+Nov 19 14:53:35.620 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 14:53:39.070 HYPERVISOR: exec_cmd: nio unbind_filter udp-3c6e31a8-e13c-4266-b46b-967cfe961e97 2 
+Nov 19 14:53:42.982 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 14:53:42.994 HYPERVISOR: exec_cmd: vm stop CPE1 
+Nov 19 14:53:43.121 VM: VM CPE1 shutdown.
+Nov 19 14:53:43.124 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 14:53:43.892 HYPERVISOR: exec_cmd: vm extract_config CPE1 
