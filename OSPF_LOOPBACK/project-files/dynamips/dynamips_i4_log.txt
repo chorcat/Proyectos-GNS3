@@ -1,0 +1,57 @@
+Oct 15 19:49:53.826 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 15 19:49:53.827 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 49294.
+Oct 15 19:49:53.836 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 15 19:49:53.841 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_LOOPBACK\project-files\dynamips 
+Oct 15 19:49:53.841 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_LOOPBACK\project-files\dynamips
+Oct 15 19:49:53.846 HYPERVISOR: exec_cmd: vm create R4 4 c3745 
+Oct 15 19:49:53.846 VM: VM R4 created.
+Oct 15 19:49:53.850 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Oct 15 19:49:53.854 HYPERVISOR: exec_cmd: c3745 get_mac_addr R4 
+Oct 15 19:49:53.859 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:49:53.863 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 NM-1FE-TX 
+Oct 15 19:49:53.868 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Oct 15 19:49:53.872 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:49:53.877 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 NM-1FE-TX 
+Oct 15 19:49:53.881 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:49:53.886 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Oct 15 19:49:53.891 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Oct 15 19:49:53.895 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:49:53.899 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60aa311c 
+Oct 15 19:49:53.904 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:49:53.908 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Oct 15 19:49:53.913 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Oct 15 19:49:53.918 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Oct 15 19:49:53.922 HYPERVISOR: exec_cmd: vm set_ios R4 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 15 19:49:53.930 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Oct 15 19:50:05.831 HYPERVISOR: exec_cmd: nio create_udp udp-eedc6cae-250f-469c-a58f-d84833c570ac 10005 192.168.47.1 10004 
+Oct 15 19:50:05.838 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-eedc6cae-250f-469c-a58f-d84833c570ac 
+Oct 15 19:50:05.846 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:50:10.677 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Oct 15 19:50:10.677 VM: VM Ghost created.
+Oct 15 19:50:10.688 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 15 19:50:10.692 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 15 19:50:10.697 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 15 19:50:10.701 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 15 19:50:10.705 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 15 19:50:10.710 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 15 19:50:11.052 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 15 19:50:11.058 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 15 19:50:11.171 VM: VM Ghost shutdown.
+Oct 15 19:50:11.175 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 15 19:50:11.175 VM: VM Ghost destroyed.
+Oct 15 19:50:11.186 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Oct 15 19:50:11.191 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 15 19:50:11.196 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 19:50:11.204 HYPERVISOR: exec_cmd: vm start R4 
+Oct 15 20:18:20.646 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 20:18:20.667 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 15 20:18:20.827 VM: VM R4 shutdown.
+Oct 15 20:18:20.842 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 15 20:18:23.996 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 15 20:18:24.601 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 15 20:18:24.627 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 15 20:18:24.664 HYPERVISOR: exec_cmd: vm delete R4 
+Oct 15 20:18:24.664 VM: VM R4 destroyed.
+Oct 15 20:18:24.710 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 15 20:18:24.916 HYPERVISOR: Stopped.
+Oct 15 20:18:24.916 GENERAL: reset done.

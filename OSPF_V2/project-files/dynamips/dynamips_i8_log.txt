@@ -1,0 +1,62 @@
+Oct 09 13:06:46.576 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 09 13:06:46.577 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 56037.
+Oct 09 13:06:47.046 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 13:06:47.052 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips 
+Oct 09 13:06:47.052 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips
+Oct 09 13:06:47.057 HYPERVISOR: exec_cmd: vm create R7 8 c3745 
+Oct 09 13:06:47.063 VM: VM R7 created.
+Oct 09 13:06:47.065 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5013 
+Oct 09 13:06:47.071 HYPERVISOR: exec_cmd: c3745 get_mac_addr R7 
+Oct 09 13:06:47.076 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Oct 09 13:06:47.080 HYPERVISOR: exec_cmd: vm set_exec_area R7 64 
+Oct 09 13:06:47.085 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:06:47.088 HYPERVISOR: exec_cmd: vm slot_add_binding R7 2 0 NM-1FE-TX 
+Oct 09 13:06:47.092 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:06:47.096 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x60aa311c 
+Oct 09 13:06:47.100 HYPERVISOR: exec_cmd: vm set_ios R7 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 09 13:06:47.104 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:06:47.108 HYPERVISOR: exec_cmd: vm slot_add_binding R7 3 0 NM-1FE-TX 
+Oct 09 13:06:47.115 HYPERVISOR: exec_cmd: vm set_ram R7 256 
+Oct 09 13:06:47.119 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:06:47.123 HYPERVISOR: exec_cmd: vm slot_add_binding R7 4 0 NM-1FE-TX 
+Oct 09 13:06:47.127 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:06:47.131 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+Oct 09 13:06:47.135 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Oct 09 13:06:47.142 HYPERVISOR: exec_cmd: vm set_config R7 configs/i8_startup-config.cfg 
+Oct 09 13:07:20.865 HYPERVISOR: exec_cmd: nio create_udp udp-c256c905-7c81-4379-9017-acd57ddd65a9 10033 192.168.47.1 10032 
+Oct 09 13:07:20.872 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 2 0 udp-c256c905-7c81-4379-9017-acd57ddd65a9 
+Oct 09 13:07:20.880 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:07:26.041 HYPERVISOR: exec_cmd: nio create_udp udp-e9177c5c-0787-435b-9f5f-1dd818b6aef6 10034 192.168.47.1 10035 
+Oct 09 13:07:26.053 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-e9177c5c-0787-435b-9f5f-1dd818b6aef6 
+Oct 09 13:07:26.061 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:10:00.351 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Oct 09 13:10:00.373 HYPERVISOR: exec_cmd: vm set_ghost_file R7 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 09 13:10:00.386 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:10:00.393 HYPERVISOR: exec_cmd: vm start R7 
+Oct 09 13:24:15.583 HYPERVISOR: exec_cmd: nio bind_filter udp-c256c905-7c81-4379-9017-acd57ddd65a9 2 capture 
+Oct 09 13:24:15.587 HYPERVISOR: exec_cmd: nio setup_filter udp-c256c905-7c81-4379-9017-acd57ddd65a9 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\captures\R7_FastEthernet2-0_to_R4_FastEthernet2-0.pcap 
+Oct 09 13:32:39.708 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 13:32:39.716 HYPERVISOR: exec_cmd: vm stop R7 
+Oct 09 13:32:39.840 VM: VM R7 shutdown.
+Oct 09 13:32:39.844 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 09 13:32:46.845 HYPERVISOR: exec_cmd: nio unbind_filter udp-c256c905-7c81-4379-9017-acd57ddd65a9 2 
+Oct 09 13:32:49.821 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 09 14:31:21.892 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 14:31:21.908 HYPERVISOR: exec_cmd: vm start R7 
+Oct 09 14:32:17.266 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 14:32:17.280 HYPERVISOR: exec_cmd: vm stop R7 
+Oct 09 14:32:17.432 VM: VM R7 shutdown.
+Oct 09 14:32:17.448 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 09 14:32:19.365 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 14:32:19.378 HYPERVISOR: exec_cmd: vm start R7 
+Oct 09 14:32:40.184 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 14:32:40.200 HYPERVISOR: exec_cmd: vm stop R7 
+Oct 09 14:32:40.363 VM: VM R7 shutdown.
+Oct 09 14:32:40.371 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 09 14:32:46.522 HYPERVISOR: exec_cmd: vm get_status R7 
+Oct 09 14:32:46.569 HYPERVISOR: exec_cmd: vm extract_config R7 
+Oct 09 14:32:46.631 HYPERVISOR: exec_cmd: vm delete R7 
+Oct 09 14:32:46.631 VM: VM R7 destroyed.
+Oct 09 14:32:46.698 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 09 14:32:46.858 HYPERVISOR: Stopped.
+Oct 09 14:32:46.859 GENERAL: reset done.

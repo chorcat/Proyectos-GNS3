@@ -1,0 +1,65 @@
+Oct 08 19:23:26.332 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 19:23:26.333 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 57932.
+Oct 08 19:23:26.343 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 19:23:26.347 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V1\project-files\dynamips 
+Oct 08 19:23:26.348 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V1\project-files\dynamips
+Oct 08 19:23:26.352 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Oct 08 19:23:26.352 VM: VM R2 created.
+Oct 08 19:23:26.356 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Oct 08 19:23:26.360 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Oct 08 19:23:26.364 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:23:26.368 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-1FE-TX 
+Oct 08 19:23:26.371 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:23:26.375 HYPERVISOR: exec_cmd: vm slot_add_binding R2 4 0 NM-1FE-TX 
+Oct 08 19:23:26.379 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Oct 08 19:23:26.383 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Oct 08 19:23:26.387 HYPERVISOR: exec_cmd: vm set_ios R2 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 08 19:23:26.390 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:23:26.394 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 NM-1FE-TX 
+Oct 08 19:23:26.398 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:23:26.402 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa1da0 
+Oct 08 19:23:26.406 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Oct 08 19:23:26.409 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:23:26.413 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Oct 08 19:23:26.417 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Oct 08 19:23:26.424 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Oct 08 19:23:57.973 HYPERVISOR: exec_cmd: nio create_udp udp-d976685f-0c90-4bff-833f-8dc085016e4f 10001 192.168.47.1 10000 
+Oct 08 19:23:57.981 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-d976685f-0c90-4bff-833f-8dc085016e4f 
+Oct 08 19:23:57.989 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:24:03.024 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:24:03.032 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 0 
+Oct 08 19:24:03.040 HYPERVISOR: exec_cmd: nio delete udp-d976685f-0c90-4bff-833f-8dc085016e4f 
+Oct 08 19:24:09.969 HYPERVISOR: exec_cmd: nio create_udp udp-66e1837f-07cb-4d6d-86f8-0fc29bcde6a7 10001 192.168.47.1 10000 
+Oct 08 19:24:09.977 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-66e1837f-07cb-4d6d-86f8-0fc29bcde6a7 
+Oct 08 19:24:09.984 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:24:12.590 HYPERVISOR: exec_cmd: nio create_udp udp-49c404fd-52df-40cc-917e-4a6c05406a0a 10002 192.168.47.1 10003 
+Oct 08 19:24:12.601 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-49c404fd-52df-40cc-917e-4a6c05406a0a 
+Oct 08 19:24:12.608 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:24:20.461 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Oct 08 19:24:20.468 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 08 19:24:20.473 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:24:20.477 HYPERVISOR: exec_cmd: vm start R2 
+Oct 08 19:43:42.666 HYPERVISOR: exec_cmd: nio bind_filter udp-66e1837f-07cb-4d6d-86f8-0fc29bcde6a7 2 capture 
+Oct 08 19:43:42.669 HYPERVISOR: exec_cmd: nio setup_filter udp-66e1837f-07cb-4d6d-86f8-0fc29bcde6a7 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V1\project-files\captures\R2_FastEthernet0-0_to_R1_FastEthernet0-0.pcap 
+Oct 08 19:43:46.557 HYPERVISOR: exec_cmd: nio bind_filter udp-49c404fd-52df-40cc-917e-4a6c05406a0a 2 capture 
+Oct 08 19:43:46.561 HYPERVISOR: exec_cmd: nio setup_filter udp-49c404fd-52df-40cc-917e-4a6c05406a0a 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V1\project-files\captures\R2_FastEthernet0-1_to_R3_FastEthernet0-1.pcap 
+Oct 08 19:44:54.081 HYPERVISOR: exec_cmd: nio unbind_filter udp-66e1837f-07cb-4d6d-86f8-0fc29bcde6a7 2 
+Oct 08 19:44:55.752 HYPERVISOR: exec_cmd: nio unbind_filter udp-49c404fd-52df-40cc-917e-4a6c05406a0a 2 
+Oct 08 19:46:23.221 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:46:23.234 HYPERVISOR: exec_cmd: vm stop R2 
+Oct 08 19:46:23.548 VM: VM R2 shutdown.
+Oct 08 19:46:23.552 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 08 19:46:27.445 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 08 19:58:37.257 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:58:37.269 HYPERVISOR: exec_cmd: vm start R2 
+Oct 08 19:58:39.493 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:58:39.505 HYPERVISOR: exec_cmd: vm stop R2 
+Oct 08 19:58:39.646 VM: VM R2 shutdown.
+Oct 08 19:58:39.661 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 08 19:58:45.120 HYPERVISOR: exec_cmd: vm get_status R2 
+Oct 08 19:58:45.131 HYPERVISOR: exec_cmd: vm extract_config R2 
+Oct 08 19:58:45.146 HYPERVISOR: exec_cmd: vm delete R2 
+Oct 08 19:58:45.147 VM: VM R2 destroyed.
+Oct 08 19:58:45.163 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 08 19:58:45.646 HYPERVISOR: Stopped.
+Oct 08 19:58:45.646 GENERAL: reset done.

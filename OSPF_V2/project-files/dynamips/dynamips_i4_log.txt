@@ -1,0 +1,86 @@
+Oct 09 11:08:54.063 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 09 11:08:54.064 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 54947.
+Oct 09 11:08:54.559 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 11:08:54.576 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips 
+Oct 09 11:08:54.576 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips
+Oct 09 11:08:54.593 HYPERVISOR: exec_cmd: vm create R4 4 c3745 
+Oct 09 11:08:54.594 VM: VM R4 created.
+Oct 09 11:08:54.612 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Oct 09 11:08:54.628 HYPERVISOR: exec_cmd: c3745 get_mac_addr R4 
+Oct 09 11:08:54.644 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Oct 09 11:08:54.659 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:54.675 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Oct 09 11:08:54.691 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Oct 09 11:08:54.706 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:54.722 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 NM-1FE-TX 
+Oct 09 11:08:54.738 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:54.753 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Oct 09 11:08:54.769 HYPERVISOR: exec_cmd: c3745 set_mac_addr R4 c404.24f8.0000 
+Oct 09 11:08:54.784 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:54.800 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60aa1da0 
+Oct 09 11:08:54.816 HYPERVISOR: exec_cmd: vm set_ios R4 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 09 11:08:54.835 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Oct 09 11:08:54.854 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:54.872 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 NM-1FE-TX 
+Oct 09 11:08:54.888 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Oct 09 11:08:54.904 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Oct 09 11:08:55.108 HYPERVISOR: exec_cmd: nio create_udp udp-bda4f25f-dc28-413c-b36b-455b884bae0b 10002 192.168.47.1 10001 
+Oct 09 11:08:55.127 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-bda4f25f-dc28-413c-b36b-455b884bae0b 
+Oct 09 11:08:55.142 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:55.180 HYPERVISOR: exec_cmd: nio create_udp udp-116266dd-c399-4c33-8a45-c730f1365264 10003 192.168.47.1 10005 
+Oct 09 11:08:55.202 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-116266dd-c399-4c33-8a45-c730f1365264 
+Oct 09 11:08:55.223 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 11:08:55.421 HYPERVISOR: exec_cmd: nio create_udp udp-32fbe54f-8cc4-4941-9788-7f8dd10af19b 10015 192.168.47.1 10014 
+Oct 09 11:08:55.436 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-32fbe54f-8cc4-4941-9788-7f8dd10af19b 
+Oct 09 11:08:55.459 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 12:14:49.565 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Oct 09 12:14:49.573 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 09 12:14:49.578 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 12:14:49.585 HYPERVISOR: exec_cmd: vm start R4 
+Oct 09 12:15:34.066 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 12:15:34.088 HYPERVISOR: exec_cmd: vm set_idle_pc_online R4 0 0x60aa311c 
+Oct 09 12:49:23.837 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 12:49:23.858 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 09 12:49:23.991 VM: VM R4 shutdown.
+Oct 09 12:49:24.009 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 12:49:27.278 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 12:49:27.300 HYPERVISOR: exec_cmd: vm start R4 
+Oct 09 13:01:41.116 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 13:01:41.135 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 09 13:01:41.447 VM: VM R4 shutdown.
+Oct 09 13:01:41.456 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 13:02:03.552 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 13:02:03.576 HYPERVISOR: exec_cmd: vm start R4 
+Oct 09 13:06:38.510 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 13:07:20.859 HYPERVISOR: exec_cmd: nio create_udp udp-f2f4ae9b-a31a-4bdb-a37d-cb8a73bfb8d3 10032 192.168.47.1 10033 
+Oct 09 13:07:20.870 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 2 0 udp-f2f4ae9b-a31a-4bdb-a37d-cb8a73bfb8d3 
+Oct 09 13:07:20.878 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 13:07:20.885 HYPERVISOR: exec_cmd: vm slot_enable_nio R4 2 0 
+Oct 09 13:08:20.403 HYPERVISOR: exec_cmd: nio create_udp udp-f7a6ea3b-7a8f-4b2f-ab79-853827045830 10040 192.168.47.1 10041 
+Oct 09 13:08:20.415 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 0 udp-f7a6ea3b-7a8f-4b2f-ab79-853827045830 
+Oct 09 13:08:20.423 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 13:08:20.431 HYPERVISOR: exec_cmd: vm slot_enable_nio R4 3 0 
+Oct 09 13:32:40.128 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 13:32:40.137 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 09 13:32:40.306 VM: VM R4 shutdown.
+Oct 09 13:32:40.310 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 13:32:49.833 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 14:31:22.357 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 14:31:22.376 HYPERVISOR: exec_cmd: vm start R4 
+Oct 09 14:32:17.710 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 14:32:17.728 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 09 14:32:17.967 VM: VM R4 shutdown.
+Oct 09 14:32:17.983 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 14:32:19.793 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 14:32:19.805 HYPERVISOR: exec_cmd: vm start R4 
+Oct 09 14:32:40.646 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 14:32:40.663 HYPERVISOR: exec_cmd: vm stop R4 
+Oct 09 14:32:40.880 VM: VM R4 shutdown.
+Oct 09 14:32:40.889 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 14:32:46.526 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 09 14:32:46.573 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 09 14:32:46.643 HYPERVISOR: exec_cmd: vm delete R4 
+Oct 09 14:32:46.643 VM: VM R4 destroyed.
+Oct 09 14:32:46.704 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 09 14:32:47.126 HYPERVISOR: Stopped.
+Oct 09 14:32:47.127 GENERAL: reset done.

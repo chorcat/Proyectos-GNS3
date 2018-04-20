@@ -1,0 +1,56 @@
+Oct 09 13:06:50.954 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 09 13:06:50.955 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 56040.
+Oct 09 13:06:50.967 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 09 13:06:50.972 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips 
+Oct 09 13:06:50.972 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\OSPF_V2\project-files\dynamips
+Oct 09 13:06:50.976 HYPERVISOR: exec_cmd: vm create ESW2 9 c3745 
+Oct 09 13:06:50.977 VM: VM ESW2 created.
+Oct 09 13:06:50.981 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5014 
+Oct 09 13:06:50.985 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW2 
+Oct 09 13:06:50.989 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Oct 09 13:06:50.993 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Oct 09 13:06:50.997 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Oct 09 13:06:51.001 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:06:51.006 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Oct 09 13:06:51.010 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:06:51.014 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60aa311c 
+Oct 09 13:06:51.018 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Oct 09 13:06:51.022 HYPERVISOR: exec_cmd: vm set_ios ESW2 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 09 13:06:51.031 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i9_startup-config.cfg 
+Oct 09 13:07:26.048 HYPERVISOR: exec_cmd: nio create_udp udp-8bdd9369-81ef-4358-a9a3-d970dd903078 10035 192.168.47.1 10034 
+Oct 09 13:07:26.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-8bdd9369-81ef-4358-a9a3-d970dd903078 
+Oct 09 13:07:26.063 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:07:30.017 HYPERVISOR: exec_cmd: nio create_udp udp-9e7fbaef-061d-4679-b092-03432f8987f0 10036 192.168.47.1 10037 
+Oct 09 13:07:30.032 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-9e7fbaef-061d-4679-b092-03432f8987f0 
+Oct 09 13:07:30.036 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:07:32.761 HYPERVISOR: exec_cmd: nio create_udp udp-afe25cdb-c8ae-4fd9-8065-a553d80d7d94 10038 192.168.47.1 10039 
+Oct 09 13:07:32.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 2 udp-afe25cdb-c8ae-4fd9-8065-a553d80d7d94 
+Oct 09 13:07:32.780 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:10:00.319 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Oct 09 13:10:00.330 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 09 13:10:00.346 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:10:00.361 HYPERVISOR: exec_cmd: vm start ESW2 
+Oct 09 13:32:39.695 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 13:32:39.710 HYPERVISOR: exec_cmd: vm stop ESW2 
+Oct 09 13:32:39.880 VM: VM ESW2 shutdown.
+Oct 09 13:32:39.899 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 09 13:32:49.840 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 09 14:31:21.886 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 14:31:21.905 HYPERVISOR: exec_cmd: vm start ESW2 
+Oct 09 14:32:17.255 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 14:32:17.275 HYPERVISOR: exec_cmd: vm stop ESW2 
+Oct 09 14:32:17.486 VM: VM ESW2 shutdown.
+Oct 09 14:32:17.489 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 09 14:32:19.361 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 14:32:19.375 HYPERVISOR: exec_cmd: vm start ESW2 
+Oct 09 14:32:40.139 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 14:32:40.171 HYPERVISOR: exec_cmd: vm stop ESW2 
+Oct 09 14:32:40.360 VM: VM ESW2 shutdown.
+Oct 09 14:32:40.363 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 09 14:32:46.524 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Oct 09 14:32:46.571 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Oct 09 14:32:46.637 HYPERVISOR: exec_cmd: vm delete ESW2 
+Oct 09 14:32:46.637 VM: VM ESW2 destroyed.
+Oct 09 14:32:46.701 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 09 14:32:46.857 HYPERVISOR: Stopped.
+Oct 09 14:32:46.860 GENERAL: reset done.
