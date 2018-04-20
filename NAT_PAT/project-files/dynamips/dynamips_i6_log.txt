@@ -1,0 +1,21 @@
+Oct 08 17:00:52.751 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 17:00:52.752 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 56022.
+Oct 08 17:00:52.764 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 17:00:52.767 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_ESTATICO_V2\project-files\dynamips 
+Oct 08 17:00:52.768 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_ESTATICO_V2\project-files\dynamips
+Oct 08 17:00:52.772 HYPERVISOR: exec_cmd: ethsw create SW1 
+Oct 08 17:03:53.634 HYPERVISOR: exec_cmd: nio create_udp udp-83da9630-28c4-46a9-9ccf-8eaa90e7ad2c 10001 192.168.47.1 10000 
+Oct 08 17:03:53.640 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-83da9630-28c4-46a9-9ccf-8eaa90e7ad2c 
+Oct 08 17:03:53.658 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-83da9630-28c4-46a9-9ccf-8eaa90e7ad2c 1 
+Oct 08 17:03:56.248 HYPERVISOR: exec_cmd: nio create_udp udp-57f7eaca-f765-4c4f-90e7-2f492c14de1a 10003 192.168.47.1 10002 
+Oct 08 17:03:56.253 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-57f7eaca-f765-4c4f-90e7-2f492c14de1a 
+Oct 08 17:03:56.259 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-57f7eaca-f765-4c4f-90e7-2f492c14de1a 1 
+Oct 08 17:03:58.609 HYPERVISOR: exec_cmd: nio create_udp udp-bc864bec-526f-43ee-aad5-67d82e18ee9a 10005 192.168.47.1 10004 
+Oct 08 17:03:58.614 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-bc864bec-526f-43ee-aad5-67d82e18ee9a 
+Oct 08 17:03:58.637 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-bc864bec-526f-43ee-aad5-67d82e18ee9a 1 
+Oct 08 17:04:01.466 HYPERVISOR: exec_cmd: nio create_udp udp-3725ea5f-be19-42e5-9a68-d2a3acf89459 10006 192.168.47.1 10007 
+Oct 08 17:04:01.481 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3725ea5f-be19-42e5-9a68-d2a3acf89459 
+Oct 08 17:04:01.494 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3725ea5f-be19-42e5-9a68-d2a3acf89459 1 
+Oct 08 17:04:07.112 HYPERVISOR: exec_cmd: nio create_udp udp-2b27be37-e8a4-4709-8c92-c30809f4facc 10008 192.168.47.1 10009 
+Oct 08 17:04:07.124 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-2b27be37-e8a4-4709-8c92-c30809f4facc 
+Oct 08 17:04:07.143 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-2b27be37-e8a4-4709-8c92-c30809f4facc 1 
