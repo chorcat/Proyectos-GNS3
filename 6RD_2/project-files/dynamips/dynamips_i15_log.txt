@@ -1,0 +1,41 @@
+Nov 19 18:22:34.947 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 18:22:34.948 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 52352.
+Nov 19 18:22:35.451 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 18:22:35.455 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_2\project-files\dynamips 
+Nov 19 18:22:35.456 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_2\project-files\dynamips
+Nov 19 18:22:35.460 HYPERVISOR: exec_cmd: vm create R5 9 c7200 
+Nov 19 18:22:35.461 VM: VM R5 created.
+Nov 19 18:22:35.465 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Nov 19 18:22:35.469 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Nov 19 18:22:35.473 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.477 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Nov 19 18:22:35.482 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Nov 19 18:22:35.486 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.490 HYPERVISOR: exec_cmd: vm slot_remove_binding R5 0 0 
+Nov 19 18:22:35.494 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.498 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-2FE 
+Nov 19 18:22:35.502 HYPERVISOR: exec_cmd: vm set_ios R5 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 18:22:35.506 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Nov 19 18:22:35.510 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Nov 19 18:22:35.514 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.518 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 PA-FE-TX 
+Nov 19 18:22:35.522 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.526 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 PA-FE-TX 
+Nov 19 18:22:35.530 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 19 18:22:35.534 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x61d99154 
+Nov 19 18:22:35.538 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Nov 19 18:22:35.546 HYPERVISOR: exec_cmd: vm set_config R5 configs/i9_startup-config.cfg 
+Nov 19 18:22:46.802 HYPERVISOR: exec_cmd: vm rename R5 CPE3 
+Nov 19 18:24:26.041 HYPERVISOR: exec_cmd: nio create_udp udp-b9b4ccad-245f-4bcb-b80c-913425349d50 10006 192.168.232.1 10007 
+Nov 19 18:24:26.053 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE3 0 0 udp-b9b4ccad-245f-4bcb-b80c-913425349d50 
+Nov 19 18:24:26.061 HYPERVISOR: exec_cmd: vm get_status CPE3 
+Nov 19 18:24:47.856 HYPERVISOR: exec_cmd: vm get_status CPE3 
+Nov 19 18:24:47.868 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CPE3 0 0 
+Nov 19 18:24:47.876 HYPERVISOR: exec_cmd: nio delete udp-b9b4ccad-245f-4bcb-b80c-913425349d50 
+Nov 19 18:24:47.898 HYPERVISOR: exec_cmd: vm get_status CPE3 
+Nov 19 18:24:47.913 HYPERVISOR: exec_cmd: vm extract_config CPE3 
+Nov 19 18:24:47.929 HYPERVISOR: exec_cmd: vm delete CPE3 
+Nov 19 18:24:47.930 VM: VM CPE3 destroyed.
+Nov 19 18:24:47.963 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 18:24:48.014 HYPERVISOR: Stopped.
+Nov 19 18:24:48.014 GENERAL: reset done.

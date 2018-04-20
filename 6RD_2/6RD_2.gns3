@@ -1,0 +1,435 @@
+{
+    "auto_start": false,
+    "name": "6RD_2",
+    "project_id": "78f043d2-d416-4f40-9e2f-a5af14a9f98b",
+    "revision": 4,
+    "show_port_names": true,
+    "topology": {
+        "links": [
+            {
+                "description": "Link from CE port FastEthernet0/0 to IP4 port FastEthernet0/0",
+                "destination_node_id": 13,
+                "destination_port_id": 69,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.999489857734062,
+                    "y": 22.202017625544116
+                },
+                "id": 8,
+                "source_node_id": 12,
+                "source_port_id": 64,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 72.99948985773403,
+                    "y": 21.797982374455884
+                }
+            },
+            {
+                "description": "Link from IP4 port FastEthernet0/1 to BR port FastEthernet0/1",
+                "destination_node_id": 14,
+                "destination_port_id": 75,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": -6.997852464295676,
+                    "y": 22.414485517764717
+                },
+                "id": 9,
+                "source_node_id": 13,
+                "source_port_id": 70,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/1",
+                    "x": 72.99785246429568,
+                    "y": 21.585514482235283
+                }
+            },
+            {
+                "description": "Link from BR port FastEthernet0/0 to IP6 port FastEthernet0/0",
+                "destination_node_id": 15,
+                "destination_port_id": 79,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -6.9992914020495505,
+                    "y": 22.238091020250295
+                },
+                "id": 10,
+                "source_node_id": 14,
+                "source_port_id": 74,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 72.99929140204956,
+                    "y": 21.761908979749705
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "description": "Router c7200",
+                "dynamips_id": 12,
+                "id": 12,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "CE",
+                    "x": 21.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IP4 on port FastEthernet0/0",
+                        "id": 64,
+                        "link_id": 8,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 65,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 66,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 67,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5000,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x61d99154",
+                    "idlesleep": 30,
+                    "image": "c7200-advipservicesk9-mz.152-4.S5.image",
+                    "image_md5sum": "cbbbea66a253f1dac0fcf81274dc778d",
+                    "mac_addr": "ca0c.0248.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "CE",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i12_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "872fd62c-711b-494b-b591-09308c23d50c",
+                "x": -402.0,
+                "y": -90.0
+            },
+            {
+                "description": "Router c3745",
+                "dynamips_id": 13,
+                "id": 13,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IP4",
+                    "x": 18.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 4,
+                        "id": 68,
+                        "name": "FastEthernet4/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to CE on port FastEthernet0/0",
+                        "id": 69,
+                        "link_id": 8,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to BR on port FastEthernet0/1",
+                        "id": 70,
+                        "link_id": 9,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 71,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 72,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 73,
+                        "name": "FastEthernet3/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5001,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60aa1da0",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek9-mz.124-25d.image",
+                    "image_md5sum": "ddbaf74274822b50fa9670e10c75b08f",
+                    "iomem": 5,
+                    "mac_addr": "c40d.1c34.0000",
+                    "mmap": true,
+                    "name": "IP4",
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-1FE-TX",
+                    "slot3": "NM-1FE-TX",
+                    "slot4": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i13_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3745",
+                "vm_id": "72d46893-b9ea-42eb-b7c2-fa1cb10a8631",
+                "x": -204.0,
+                "y": -91.0
+            },
+            {
+                "description": "Router c7200",
+                "dynamips_id": 14,
+                "id": 14,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "BR",
+                    "x": 20.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IP6 on port FastEthernet0/0",
+                        "id": 74,
+                        "link_id": 10,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to IP4 on port FastEthernet0/1",
+                        "id": 75,
+                        "link_id": 9,
+                        "name": "FastEthernet0/1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 76,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 77,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 4,
+                    "console": 5002,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x61d99154",
+                    "idlesleep": 30,
+                    "image": "c7200-advipservicesk9-mz.152-4.S5.image",
+                    "image_md5sum": "cbbbea66a253f1dac0fcf81274dc778d",
+                    "mac_addr": "ca0e.10f4.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "name": "BR",
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-2FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i14_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C7200",
+                "vm_id": "b3603d6d-d1cc-42ba-b1b9-017de5a3a920",
+                "x": -11.0,
+                "y": -93.0
+            },
+            {
+                "description": "Router c3745",
+                "dynamips_id": 15,
+                "id": 15,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "IP6",
+                    "x": 18.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 4,
+                        "id": 78,
+                        "name": "FastEthernet4/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to BR on port FastEthernet0/0",
+                        "id": 79,
+                        "link_id": 10,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 80,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 1,
+                        "id": 81,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 82,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 3,
+                        "id": 83,
+                        "name": "FastEthernet3/0",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 5003,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60aa1da0",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek9-mz.124-25d.image",
+                    "image_md5sum": "ddbaf74274822b50fa9670e10c75b08f",
+                    "iomem": 5,
+                    "mac_addr": "c40f.02c4.0000",
+                    "mmap": true,
+                    "name": "IP6",
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-1FE-TX",
+                    "slot3": "NM-1FE-TX",
+                    "slot4": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i15_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3745",
+                "vm_id": "177ceb16-df10-4f67-ad8d-3b1e151127f8",
+                "x": 157.0,
+                "y": -94.0
+            }
+        ],
+        "servers": [
+            {
+                "host": "192.168.232.1",
+                "id": 1,
+                "local": true,
+                "port": 3080,
+                "protocol": "http",
+                "vm": false
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "1.5.2"
+}
