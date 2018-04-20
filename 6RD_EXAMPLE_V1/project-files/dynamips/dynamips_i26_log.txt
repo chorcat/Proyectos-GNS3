@@ -1,0 +1,36 @@
+Nov 19 18:47:18.670 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 18:47:18.670 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 52731.
+Nov 19 18:47:19.262 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 18:47:19.292 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_V1\project-files\dynamips 
+Nov 19 18:47:19.292 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_V1\project-files\dynamips
+Nov 19 18:47:19.332 HYPERVISOR: exec_cmd: vm create R1 6 c3745 
+Nov 19 18:47:19.333 VM: VM R1 created.
+Nov 19 18:47:19.358 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5005 
+Nov 19 18:47:19.380 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 19 18:47:19.398 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 19 18:47:19.421 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c406.1170.0000 
+Nov 19 18:47:19.445 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 19 18:47:19.475 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 19 18:47:19.497 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:47:19.523 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 NM-1FE-TX 
+Nov 19 18:47:19.552 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 19 18:47:19.582 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:47:19.597 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+Nov 19 18:47:19.610 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:47:19.628 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Nov 19 18:47:19.637 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:47:19.646 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-1FE-TX 
+Nov 19 18:47:19.655 HYPERVISOR: exec_cmd: vm set_ios R1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 19 18:47:19.663 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:47:19.672 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Nov 19 18:47:19.681 HYPERVISOR: exec_cmd: vm set_config R1 configs/i6_startup-config.cfg 
+Nov 19 18:47:19.810 HYPERVISOR: exec_cmd: nio create_udp udp-09823272-a287-4c95-a6f8-e342da60dbbc 10009 192.168.232.1 10008 
+Nov 19 18:47:19.832 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-09823272-a287-4c95-a6f8-e342da60dbbc 
+Nov 19 18:47:19.848 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:48:21.792 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:48:21.816 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 19 18:48:21.839 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 19 18:48:21.839 VM: VM R1 destroyed.
+Nov 19 18:48:21.873 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 18:48:22.234 HYPERVISOR: Stopped.
+Nov 19 18:48:22.234 GENERAL: reset done.

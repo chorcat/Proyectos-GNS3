@@ -1,0 +1,41 @@
+Nov 19 18:47:18.582 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 18:47:18.583 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 52729.
+Nov 19 18:47:18.663 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 18:47:18.680 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_V1\project-files\dynamips 
+Nov 19 18:47:18.785 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_V1\project-files\dynamips
+Nov 19 18:47:18.787 HYPERVISOR: exec_cmd: vm create CPE1 4 c7200 
+Nov 19 18:47:18.788 VM: VM CPE1 created.
+Nov 19 18:47:18.805 HYPERVISOR: exec_cmd: vm set_con_tcp_port CPE1 5003 
+Nov 19 18:47:18.822 HYPERVISOR: exec_cmd: c7200 get_mac_addr CPE1 
+Nov 19 18:47:18.838 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:18.854 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-FE 
+Nov 19 18:47:18.870 HYPERVISOR: exec_cmd: vm set_ram CPE1 512 
+Nov 19 18:47:18.886 HYPERVISOR: exec_cmd: c7200 set_mac_addr CPE1 ca04.144c.0000 
+Nov 19 18:47:18.902 HYPERVISOR: exec_cmd: vm set_disk0 CPE1 0 
+Nov 19 18:47:18.918 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:18.935 HYPERVISOR: exec_cmd: vm slot_remove_binding CPE1 0 0 
+Nov 19 18:47:18.953 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:18.969 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-2FE 
+Nov 19 18:47:18.986 HYPERVISOR: exec_cmd: vm set_nvram CPE1 512 
+Nov 19 18:47:19.003 HYPERVISOR: exec_cmd: vm set_exec_area CPE1 64 
+Nov 19 18:47:19.019 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:19.035 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 2 0 PA-FE-TX 
+Nov 19 18:47:19.051 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:19.068 HYPERVISOR: exec_cmd: vm set_idle_pc CPE1 0x61d99154 
+Nov 19 18:47:19.084 HYPERVISOR: exec_cmd: vm set_ios CPE1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 18:47:19.101 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:19.128 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 1 0 PA-FE-TX 
+Nov 19 18:47:19.145 HYPERVISOR: exec_cmd: vm set_config CPE1 configs/i4_startup-config.cfg 
+Nov 19 18:47:19.353 HYPERVISOR: exec_cmd: nio create_udp udp-8f9958f6-b5a8-42c6-8c50-ef30de007086 10001 192.168.232.1 10000 
+Nov 19 18:47:19.377 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 1 udp-8f9958f6-b5a8-42c6-8c50-ef30de007086 
+Nov 19 18:47:19.395 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:47:19.428 HYPERVISOR: exec_cmd: nio create_udp udp-4000d147-d731-4c9b-b976-c93f8eab2a3c 10002 192.168.232.1 10003 
+Nov 19 18:47:19.452 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 0 udp-4000d147-d731-4c9b-b976-c93f8eab2a3c 
+Nov 19 18:47:19.481 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:48:21.794 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 18:48:21.819 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 18:48:21.845 HYPERVISOR: exec_cmd: vm delete CPE1 
+Nov 19 18:48:21.845 VM: VM CPE1 destroyed.
+Nov 19 18:48:21.877 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 18:48:22.167 HYPERVISOR: Stopped.
+Nov 19 18:48:22.167 GENERAL: reset done.
