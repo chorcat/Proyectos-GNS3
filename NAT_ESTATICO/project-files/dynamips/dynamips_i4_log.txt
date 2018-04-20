@@ -1,0 +1,22 @@
+Oct 08 12:17:32.313 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 12:17:32.313 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 51948.
+Oct 08 12:17:32.322 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 12:17:32.327 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_ESTATICO\project-files\dynamips 
+Oct 08 12:17:32.327 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_ESTATICO\project-files\dynamips
+Oct 08 12:17:32.332 HYPERVISOR: exec_cmd: ethsw create SW1 
+Oct 08 12:18:20.577 HYPERVISOR: exec_cmd: nio create_udp udp-5a813344-0b4f-4b5b-a77a-d787b3129f77 10000 192.168.47.1 10001 
+Oct 08 12:18:20.593 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-5a813344-0b4f-4b5b-a77a-d787b3129f77 
+Oct 08 12:18:20.615 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-5a813344-0b4f-4b5b-a77a-d787b3129f77 1 
+Oct 08 12:18:23.080 HYPERVISOR: exec_cmd: nio create_udp udp-3472cd62-dd83-4ee5-b8d6-a352c3a82bc8 10002 192.168.47.1 10003 
+Oct 08 12:18:23.094 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3472cd62-dd83-4ee5-b8d6-a352c3a82bc8 
+Oct 08 12:18:23.104 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3472cd62-dd83-4ee5-b8d6-a352c3a82bc8 1 
+Oct 08 12:18:25.265 HYPERVISOR: exec_cmd: nio create_udp udp-1e8dd417-26b3-4846-8d4a-77e643eace9b 10004 192.168.47.1 10005 
+Oct 08 12:18:25.279 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-1e8dd417-26b3-4846-8d4a-77e643eace9b 
+Oct 08 12:18:25.297 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-1e8dd417-26b3-4846-8d4a-77e643eace9b 1 
+Oct 08 12:18:30.049 HYPERVISOR: exec_cmd: nio create_udp udp-83b2a7a3-58b8-423e-9ab4-fa8800c910f9 10006 192.168.47.1 10007 
+Oct 08 12:18:30.060 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-83b2a7a3-58b8-423e-9ab4-fa8800c910f9 
+Oct 08 12:18:30.081 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-83b2a7a3-58b8-423e-9ab4-fa8800c910f9 1 
+Oct 08 12:51:34.509 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Oct 08 12:51:34.585 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 08 12:51:34.634 HYPERVISOR: Stopped.
+Oct 08 12:51:34.634 GENERAL: reset done.

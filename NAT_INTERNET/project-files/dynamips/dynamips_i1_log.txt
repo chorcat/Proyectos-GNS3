@@ -1,0 +1,62 @@
+Oct 08 14:29:37.983 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 08 14:29:37.984 HYPERVISOR: Started on IP = 192.168.47.1, TCP port = 53712.
+Oct 08 14:29:38.229 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 08 14:29:38.237 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_INTERNET\project-files\dynamips 
+Oct 08 14:29:38.481 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_INTERNET\project-files\dynamips
+Oct 08 14:29:38.484 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Oct 08 14:29:38.485 VM: VM R1 created.
+Oct 08 14:29:38.489 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Oct 08 14:29:38.494 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Oct 08 14:29:38.498 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 08 14:29:38.503 HYPERVISOR: exec_cmd: vm set_ios R1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 08 14:29:38.506 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:29:38.510 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Oct 08 14:29:38.514 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:29:38.519 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+Oct 08 14:29:38.523 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Oct 08 14:29:38.527 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:29:38.531 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-1FE-TX 
+Oct 08 14:29:38.535 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Oct 08 14:29:38.539 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:29:38.543 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Oct 08 14:29:38.547 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 08 14:29:38.551 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:29:38.555 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 NM-1FE-TX 
+Oct 08 14:29:38.561 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Oct 08 14:30:20.250 HYPERVISOR: exec_cmd: nio create_gen_eth generic_ethernet-fc9aa3ee-963c-4dba-bd5e-e9784f631471 \Device\NPF_{CAB5A237-FFC3-4F1C-92EF-661530813D5F} 
+Oct 08 14:30:20.306 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 generic_ethernet-fc9aa3ee-963c-4dba-bd5e-e9784f631471 
+Oct 08 14:30:20.309 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:30:23.224 HYPERVISOR: exec_cmd: nio create_udp udp-0a240837-6b2e-40c5-83eb-d840e48b154b 10000 192.168.47.1 10001 
+Oct 08 14:30:23.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-0a240837-6b2e-40c5-83eb-d840e48b154b 
+Oct 08 14:30:23.244 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:32:17.929 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Oct 08 14:32:17.929 VM: VM Ghost created.
+Oct 08 14:32:17.940 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Oct 08 14:32:17.957 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 08 14:32:17.966 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 08 14:32:17.985 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Oct 08 14:32:18.015 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 08 14:32:18.025 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 08 14:32:18.360 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 08 14:32:18.366 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 08 14:32:18.477 VM: VM Ghost shutdown.
+Oct 08 14:32:18.480 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 08 14:32:18.480 VM: VM Ghost destroyed.
+Oct 08 14:32:18.491 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 08 14:32:18.496 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 08 14:32:18.500 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 14:32:18.504 HYPERVISOR: exec_cmd: vm start R1 
+Oct 08 14:45:17.506 HYPERVISOR: exec_cmd: nio bind_filter generic_ethernet-fc9aa3ee-963c-4dba-bd5e-e9784f631471 2 capture 
+Oct 08 14:45:17.510 HYPERVISOR: exec_cmd: nio setup_filter generic_ethernet-fc9aa3ee-963c-4dba-bd5e-e9784f631471 2 en10mb D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\NAT_INTERNET\project-files\captures\R1_FastEthernet0-0_to_Internet_nio_gen_ethEthernet.pcap 
+Oct 08 15:33:13.961 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 08 15:34:15.291 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 15:34:15.295 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 08 15:34:15.405 VM: VM R1 shutdown.
+Oct 08 15:34:15.409 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 08 15:34:17.046 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 08 15:34:17.051 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 08 15:34:17.056 HYPERVISOR: exec_cmd: vm delete R1 
+Oct 08 15:34:17.056 VM: VM R1 destroyed.
+Oct 08 15:34:17.064 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 08 15:34:17.482 HYPERVISOR: Stopped.
+Oct 08 15:34:17.482 GENERAL: reset done.
