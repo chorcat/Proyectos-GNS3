@@ -1,0 +1,60 @@
+Nov 01 16:36:16.705 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 01 16:36:16.706 HYPERVISOR: Started on IP = 192.168.49.1, TCP port = 52711.
+Nov 01 16:36:17.118 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 01 16:36:17.127 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips 
+Nov 01 16:36:17.154 GENERAL: working_dir=C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips
+Nov 01 16:36:17.158 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Nov 01 16:36:17.160 VM: VM R1 created.
+Nov 01 16:36:17.167 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 01 16:36:17.175 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 01 16:36:17.184 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 01 16:36:17.192 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 01 16:36:17.200 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 01 16:36:17.208 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 01 16:36:17.217 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 01 16:36:17.225 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Nov 01 16:36:17.233 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 01 16:36:17.247 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Nov 01 16:37:45.827 HYPERVISOR: exec_cmd: vm rename R1 PE1 
+Nov 01 16:42:30.058 HYPERVISOR: exec_cmd: nio create_udp udp-4a47110c-669d-45d8-9502-0f531e2b2e67 10005 192.168.49.1 10004 
+Nov 01 16:42:30.075 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE1 0 0 udp-4a47110c-669d-45d8-9502-0f531e2b2e67 
+Nov 01 16:42:30.091 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 16:42:35.627 HYPERVISOR: exec_cmd: nio create_udp udp-c05291c0-9336-460a-8ff0-e13123e091f6 10006 192.168.49.1 10007 
+Nov 01 16:42:35.668 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE1 0 1 udp-c05291c0-9336-460a-8ff0-e13123e091f6 
+Nov 01 16:42:35.685 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 16:44:30.409 HYPERVISOR: exec_cmd: vm set_ghost_status PE1 2 
+Nov 01 16:44:30.425 HYPERVISOR: exec_cmd: vm set_ghost_file PE1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 01 16:44:30.433 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 16:44:30.442 HYPERVISOR: exec_cmd: vm start PE1 
+Nov 01 18:01:16.438 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:01:16.468 HYPERVISOR: exec_cmd: vm stop PE1 
+Nov 01 18:01:16.592 VM: VM PE1 shutdown.
+Nov 01 18:01:16.598 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:01:21.117 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:01:21.136 HYPERVISOR: exec_cmd: vm start PE1 
+Nov 01 18:06:36.469 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:07:42.783 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:07:42.834 HYPERVISOR: exec_cmd: vm stop PE1 
+Nov 01 18:07:42.971 VM: VM PE1 shutdown.
+Nov 01 18:07:42.978 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:10:03.540 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:10:03.572 HYPERVISOR: exec_cmd: vm start PE1 
+Nov 01 18:15:45.680 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:15:45.708 HYPERVISOR: exec_cmd: vm stop PE1 
+Nov 01 18:15:45.862 VM: VM PE1 shutdown.
+Nov 01 18:15:45.869 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:15:47.081 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:15:49.550 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:15:49.617 HYPERVISOR: exec_cmd: vm start PE1 
+Nov 01 18:20:09.491 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:20:16.400 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:20:16.420 HYPERVISOR: exec_cmd: vm stop PE1 
+Nov 01 18:20:16.619 VM: VM PE1 shutdown.
+Nov 01 18:20:16.626 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:20:18.902 HYPERVISOR: exec_cmd: vm get_status PE1 
+Nov 01 18:20:18.952 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Nov 01 18:20:19.017 HYPERVISOR: exec_cmd: vm delete PE1 
+Nov 01 18:20:19.017 VM: VM PE1 destroyed.
+Nov 01 18:20:19.069 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 01 18:20:19.390 HYPERVISOR: Stopped.
+Nov 01 18:20:19.390 GENERAL: reset done.

@@ -1,0 +1,60 @@
+Nov 01 16:36:21.577 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 01 16:36:21.578 HYPERVISOR: Started on IP = 192.168.49.1, TCP port = 52714.
+Nov 01 16:36:21.605 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 01 16:36:21.613 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips 
+Nov 01 16:36:21.614 GENERAL: working_dir=C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips
+Nov 01 16:36:21.622 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Nov 01 16:36:21.624 VM: VM R2 created.
+Nov 01 16:36:21.630 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Nov 01 16:36:21.638 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Nov 01 16:36:21.646 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 01 16:36:21.655 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Nov 01 16:36:21.663 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Nov 01 16:36:21.671 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Nov 01 16:36:21.679 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 01 16:36:21.688 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa1da0 
+Nov 01 16:36:21.696 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 01 16:36:21.709 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Nov 01 16:38:02.212 HYPERVISOR: exec_cmd: vm rename R2 P 
+Nov 01 16:42:35.656 HYPERVISOR: exec_cmd: nio create_udp udp-bf4611ad-d4a9-4df3-93b8-8a5c58011c44 10007 192.168.49.1 10006 
+Nov 01 16:42:35.673 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P 0 0 udp-bf4611ad-d4a9-4df3-93b8-8a5c58011c44 
+Nov 01 16:42:35.690 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 16:42:38.397 HYPERVISOR: exec_cmd: nio create_udp udp-73d0f525-82ad-4b50-9302-12b3bde16887 10008 192.168.49.1 10009 
+Nov 01 16:42:38.420 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P 0 1 udp-73d0f525-82ad-4b50-9302-12b3bde16887 
+Nov 01 16:42:38.436 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 16:44:30.377 HYPERVISOR: exec_cmd: vm set_ghost_status P 2 
+Nov 01 16:44:30.393 HYPERVISOR: exec_cmd: vm set_ghost_file P c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 01 16:44:30.403 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 16:44:30.418 HYPERVISOR: exec_cmd: vm start P 
+Nov 01 18:01:16.294 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:01:16.325 HYPERVISOR: exec_cmd: vm stop P 
+Nov 01 18:01:16.445 VM: VM P shutdown.
+Nov 01 18:01:16.474 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:01:21.111 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:01:21.131 HYPERVISOR: exec_cmd: vm start P 
+Nov 01 18:06:36.394 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:07:42.678 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:07:42.705 HYPERVISOR: exec_cmd: vm stop P 
+Nov 01 18:07:42.906 VM: VM P shutdown.
+Nov 01 18:07:42.913 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:10:03.345 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:10:03.364 HYPERVISOR: exec_cmd: vm start P 
+Nov 01 18:15:45.612 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:15:45.673 HYPERVISOR: exec_cmd: vm stop P 
+Nov 01 18:15:45.804 VM: VM P shutdown.
+Nov 01 18:15:45.813 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:15:47.106 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:15:49.311 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:15:49.330 HYPERVISOR: exec_cmd: vm start P 
+Nov 01 18:20:09.528 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:20:16.301 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:20:16.351 HYPERVISOR: exec_cmd: vm stop P 
+Nov 01 18:20:16.536 VM: VM P shutdown.
+Nov 01 18:20:16.543 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:20:18.892 HYPERVISOR: exec_cmd: vm get_status P 
+Nov 01 18:20:18.943 HYPERVISOR: exec_cmd: vm extract_config P 
+Nov 01 18:20:19.003 HYPERVISOR: exec_cmd: vm delete P 
+Nov 01 18:20:19.003 VM: VM P destroyed.
+Nov 01 18:20:19.058 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 01 18:20:19.376 HYPERVISOR: Stopped.
+Nov 01 18:20:19.376 GENERAL: reset done.

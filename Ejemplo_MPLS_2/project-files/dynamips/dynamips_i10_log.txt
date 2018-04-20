@@ -1,0 +1,73 @@
+Nov 01 16:39:33.861 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 01 16:39:33.862 HYPERVISOR: Started on IP = 192.168.49.1, TCP port = 52724.
+Nov 01 16:39:33.884 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 01 16:39:33.893 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips 
+Nov 01 16:39:33.893 GENERAL: working_dir=C:\Users\Borja\GNS3\projects\Ejemplo_MPLS_2\project-files\dynamips
+Nov 01 16:39:33.902 HYPERVISOR: exec_cmd: vm create R1 5 c3745 
+Nov 01 16:39:33.903 VM: VM R1 created.
+Nov 01 16:39:33.910 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5004 
+Nov 01 16:39:33.918 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 01 16:39:33.926 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 01 16:39:33.934 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 01 16:39:33.942 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 01 16:39:33.951 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 01 16:39:33.959 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 01 16:39:33.967 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Nov 01 16:39:33.975 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 01 16:39:33.986 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+Nov 01 16:39:39.027 HYPERVISOR: exec_cmd: vm rename R1 CPE2 
+Nov 01 16:42:24.541 HYPERVISOR: exec_cmd: nio create_udp udp-f8a71ef6-b2fb-4952-9b59-395269906e80 10002 192.168.49.1 10003 
+Nov 01 16:42:24.571 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE2 0 0 udp-f8a71ef6-b2fb-4952-9b59-395269906e80 
+Nov 01 16:42:24.579 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:42:42.413 HYPERVISOR: exec_cmd: nio create_udp udp-45212e13-8494-48e9-9b3b-13b5903ad078 10011 192.168.49.1 10010 
+Nov 01 16:42:42.430 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE2 0 1 udp-45212e13-8494-48e9-9b3b-13b5903ad078 
+Nov 01 16:42:42.446 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:44:29.407 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Nov 01 16:44:29.409 VM: VM Ghost created.
+Nov 01 16:44:29.434 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 01 16:44:29.450 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 01 16:44:29.469 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 01 16:44:29.501 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 01 16:44:29.534 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 01 16:44:29.581 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 01 16:44:30.014 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 01 16:44:30.026 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 01 16:44:30.256 VM: VM Ghost shutdown.
+Nov 01 16:44:30.263 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 01 16:44:30.263 VM: VM Ghost destroyed.
+Nov 01 16:44:30.288 HYPERVISOR: exec_cmd: vm set_ghost_status CPE2 2 
+Nov 01 16:44:30.297 HYPERVISOR: exec_cmd: vm set_ghost_file CPE2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 01 16:44:30.307 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:44:30.322 HYPERVISOR: exec_cmd: vm start CPE2 
+Nov 01 18:01:16.143 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:01:16.168 HYPERVISOR: exec_cmd: vm stop CPE2 
+Nov 01 18:01:16.297 VM: VM CPE2 shutdown.
+Nov 01 18:01:16.332 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:01:20.922 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:01:20.973 HYPERVISOR: exec_cmd: vm start CPE2 
+Nov 01 18:06:36.451 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:07:42.535 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:07:42.561 HYPERVISOR: exec_cmd: vm stop CPE2 
+Nov 01 18:07:42.766 VM: VM CPE2 shutdown.
+Nov 01 18:07:42.804 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:10:03.209 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:10:03.255 HYPERVISOR: exec_cmd: vm start CPE2 
+Nov 01 18:15:45.360 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:15:45.386 HYPERVISOR: exec_cmd: vm stop CPE2 
+Nov 01 18:15:45.549 VM: VM CPE2 shutdown.
+Nov 01 18:15:45.605 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:15:47.068 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:15:49.120 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:15:49.168 HYPERVISOR: exec_cmd: vm start CPE2 
+Nov 01 18:20:09.474 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:20:16.005 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:20:16.045 HYPERVISOR: exec_cmd: vm stop CPE2 
+Nov 01 18:20:16.256 VM: VM CPE2 shutdown.
+Nov 01 18:20:16.306 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:20:18.888 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 18:20:18.938 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 18:20:18.996 HYPERVISOR: exec_cmd: vm delete CPE2 
+Nov 01 18:20:18.996 VM: VM CPE2 destroyed.
+Nov 01 18:20:19.054 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 01 18:20:19.077 HYPERVISOR: Stopped.
+Nov 01 18:20:19.077 GENERAL: reset done.

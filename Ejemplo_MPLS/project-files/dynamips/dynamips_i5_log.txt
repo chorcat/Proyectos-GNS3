@@ -1,0 +1,39 @@
+Nov 01 16:33:08.792 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 01 16:33:08.793 HYPERVISOR: Started on IP = 192.168.49.1, TCP port = 52687.
+Nov 01 16:33:09.123 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 01 16:33:09.137 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\Ejemplo_MPLS\project-files\dynamips 
+Nov 01 16:33:09.406 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\Ejemplo_MPLS\project-files\dynamips
+Nov 01 16:33:09.428 HYPERVISOR: exec_cmd: vm create CPE2 6 c3745 
+Nov 01 16:33:09.429 VM: VM CPE2 created.
+Nov 01 16:33:09.445 HYPERVISOR: exec_cmd: vm set_con_tcp_port CPE2 5005 
+Nov 01 16:33:09.461 HYPERVISOR: exec_cmd: c3745 get_mac_addr CPE2 
+Nov 01 16:33:09.481 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:09.506 HYPERVISOR: exec_cmd: vm set_idle_pc CPE2 0x60aa1da0 
+Nov 01 16:33:09.541 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:09.583 HYPERVISOR: exec_cmd: vm slot_add_binding CPE2 4 0 NM-1FE-TX 
+Nov 01 16:33:09.624 HYPERVISOR: exec_cmd: vm set_exec_area CPE2 64 
+Nov 01 16:33:09.664 HYPERVISOR: exec_cmd: vm set_ram CPE2 256 
+Nov 01 16:33:09.705 HYPERVISOR: exec_cmd: vm set_disk0 CPE2 0 
+Nov 01 16:33:09.746 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:09.787 HYPERVISOR: exec_cmd: vm slot_add_binding CPE2 3 0 NM-1FE-TX 
+Nov 01 16:33:09.828 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:09.870 HYPERVISOR: exec_cmd: vm slot_add_binding CPE2 1 0 NM-1FE-TX 
+Nov 01 16:33:09.911 HYPERVISOR: exec_cmd: vm set_ios CPE2 C:/Users/Borja/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 01 16:33:09.952 HYPERVISOR: exec_cmd: vm set_nvram CPE2 256 
+Nov 01 16:33:09.994 HYPERVISOR: exec_cmd: c3745 set_mac_addr CPE2 c406.2160.0000 
+Nov 01 16:33:10.035 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:10.076 HYPERVISOR: exec_cmd: vm slot_add_binding CPE2 2 0 NM-1FE-TX 
+Nov 01 16:33:10.118 HYPERVISOR: exec_cmd: vm set_config CPE2 configs/i6_startup-config.cfg 
+Nov 01 16:33:10.514 HYPERVISOR: exec_cmd: nio create_udp udp-1d69b18f-36bb-43c7-9aea-9c4895ddf8da 10001 192.168.49.1 10000 
+Nov 01 16:33:10.577 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE2 0 0 udp-1d69b18f-36bb-43c7-9aea-9c4895ddf8da 
+Nov 01 16:33:10.648 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:10.868 HYPERVISOR: exec_cmd: nio create_udp udp-0f785037-ba82-4311-a719-d9560cd21742 10008 192.168.49.1 10009 
+Nov 01 16:33:10.906 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE2 0 1 udp-0f785037-ba82-4311-a719-d9560cd21742 
+Nov 01 16:33:10.964 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:23.912 HYPERVISOR: exec_cmd: vm get_status CPE2 
+Nov 01 16:33:23.953 HYPERVISOR: exec_cmd: vm extract_config CPE2 
+Nov 01 16:33:23.991 HYPERVISOR: exec_cmd: vm delete CPE2 
+Nov 01 16:33:23.991 VM: VM CPE2 destroyed.
+Nov 01 16:33:24.032 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 01 16:33:24.071 HYPERVISOR: Stopped.
+Nov 01 16:33:24.071 GENERAL: reset done.
