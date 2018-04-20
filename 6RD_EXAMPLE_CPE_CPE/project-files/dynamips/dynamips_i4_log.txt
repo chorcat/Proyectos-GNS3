@@ -1,0 +1,57 @@
+Nov 19 18:49:52.392 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 18:49:52.393 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 52812.
+Nov 19 18:49:52.479 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 18:49:52.493 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_CPE_CPE\project-files\dynamips 
+Nov 19 18:49:52.620 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_CPE_CPE\project-files\dynamips
+Nov 19 18:49:52.637 HYPERVISOR: exec_cmd: vm create R1 6 c3745 
+Nov 19 18:49:52.646 VM: VM R1 created.
+Nov 19 18:49:52.669 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5005 
+Nov 19 18:49:52.692 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 19 18:49:52.713 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:52.735 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 NM-1FE-TX 
+Nov 19 18:49:52.759 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 19 18:49:52.781 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:52.803 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 NM-1FE-TX 
+Nov 19 18:49:52.823 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:52.844 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Nov 19 18:49:52.865 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c406.1170.0000 
+Nov 19 18:49:52.886 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 19 18:49:52.907 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:52.928 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Nov 19 18:49:52.954 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:52.972 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-1FE-TX 
+Nov 19 18:49:53.001 HYPERVISOR: exec_cmd: vm set_ios R1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 19 18:49:53.039 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 19 18:49:53.072 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 19 18:49:53.089 HYPERVISOR: exec_cmd: vm set_config R1 configs/i6_startup-config.cfg 
+Nov 19 18:49:53.697 HYPERVISOR: exec_cmd: nio create_udp udp-64e46634-d726-45ab-a1b2-63610cd3f0bc 10013 192.168.232.1 10012 
+Nov 19 18:49:53.706 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-64e46634-d726-45ab-a1b2-63610cd3f0bc 
+Nov 19 18:49:53.719 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:55.623 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Nov 19 18:49:55.624 VM: VM Ghost created.
+Nov 19 18:49:55.632 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 19 18:49:55.637 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 19 18:49:55.642 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 19 18:49:55.647 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 19 18:49:55.652 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 19 18:49:55.657 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 19 18:49:56.030 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 19 18:49:56.037 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 19 18:49:56.097 VM: VM Ghost shutdown.
+Nov 19 18:49:56.100 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 19 18:49:56.100 VM: VM Ghost destroyed.
+Nov 19 18:49:56.112 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 19 18:49:56.116 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 19 18:49:56.121 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 18:49:56.128 HYPERVISOR: exec_cmd: vm start R1 
+Nov 19 19:06:08.116 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 19:06:08.128 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 19 19:06:08.210 VM: VM R1 shutdown.
+Nov 19 19:06:08.215 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 19 19:06:18.527 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 19 19:06:18.552 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 19 19:06:18.604 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 19 19:06:18.604 VM: VM R1 destroyed.
+Nov 19 19:06:18.635 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 19:06:18.788 HYPERVISOR: Stopped.
+Nov 19 19:06:18.788 GENERAL: reset done.

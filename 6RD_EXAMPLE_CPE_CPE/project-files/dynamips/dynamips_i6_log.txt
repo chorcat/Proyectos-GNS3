@@ -1,0 +1,65 @@
+Nov 19 18:49:53.087 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 18:49:53.088 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 52819.
+Nov 19 18:49:53.224 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 18:49:53.257 HYPERVISOR: exec_cmd: hypervisor working_dir D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_CPE_CPE\project-files\dynamips 
+Nov 19 18:49:53.257 GENERAL: working_dir=D:\Dropbox\Universidad\Tercero\ATR\GNS3\projects\6RD_EXAMPLE_CPE_CPE\project-files\dynamips
+Nov 19 18:49:53.283 HYPERVISOR: exec_cmd: vm create BR 7 c7200 
+Nov 19 18:49:53.295 VM: VM BR created.
+Nov 19 18:49:53.318 HYPERVISOR: exec_cmd: vm set_con_tcp_port BR 5000 
+Nov 19 18:49:53.344 HYPERVISOR: exec_cmd: c7200 get_mac_addr BR 
+Nov 19 18:49:53.373 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.400 HYPERVISOR: exec_cmd: vm slot_add_binding BR 0 0 C7200-IO-FE 
+Nov 19 18:49:53.418 HYPERVISOR: exec_cmd: vm set_ram BR 512 
+Nov 19 18:49:53.438 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.447 HYPERVISOR: exec_cmd: vm slot_add_binding BR 1 0 PA-FE-TX 
+Nov 19 18:49:53.456 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.467 HYPERVISOR: exec_cmd: vm slot_remove_binding BR 0 0 
+Nov 19 18:49:53.472 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.477 HYPERVISOR: exec_cmd: vm slot_add_binding BR 0 0 C7200-IO-2FE 
+Nov 19 18:49:53.481 HYPERVISOR: exec_cmd: c7200 set_mac_addr BR ca07.1fa4.0000 
+Nov 19 18:49:53.485 HYPERVISOR: exec_cmd: vm set_nvram BR 512 
+Nov 19 18:49:53.489 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.493 HYPERVISOR: exec_cmd: vm set_idle_pc BR 0x61d99154 
+Nov 19 18:49:53.497 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.501 HYPERVISOR: exec_cmd: vm slot_add_binding BR 2 0 PA-FE-TX 
+Nov 19 18:49:53.505 HYPERVISOR: exec_cmd: vm set_ios BR D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 18:49:53.509 HYPERVISOR: exec_cmd: vm set_exec_area BR 64 
+Nov 19 18:49:53.513 HYPERVISOR: exec_cmd: vm set_disk0 BR 0 
+Nov 19 18:49:53.518 HYPERVISOR: exec_cmd: vm set_config BR configs/i7_startup-config.cfg 
+Nov 19 18:49:53.598 HYPERVISOR: exec_cmd: nio create_udp udp-683760f6-6d56-4683-9831-26725ecf550c 10008 192.168.232.1 10009 
+Nov 19 18:49:53.623 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BR 1 0 udp-683760f6-6d56-4683-9831-26725ecf550c 
+Nov 19 18:49:53.640 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.679 HYPERVISOR: exec_cmd: nio create_udp udp-19f335c9-a871-4155-917a-5bbb0d2c7120 10010 192.168.232.1 10011 
+Nov 19 18:49:53.691 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BR 2 0 udp-19f335c9-a871-4155-917a-5bbb0d2c7120 
+Nov 19 18:49:53.703 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:53.725 HYPERVISOR: exec_cmd: nio create_udp udp-772a8ef7-8597-4e99-8f26-4137157af4ec 10012 192.168.232.1 10013 
+Nov 19 18:49:53.739 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BR 0 0 udp-772a8ef7-8597-4e99-8f26-4137157af4ec 
+Nov 19 18:49:53.743 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:54.956 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 19 18:49:54.957 VM: VM Ghost created.
+Nov 19 18:49:54.984 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 18:49:55.002 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 19 18:49:55.011 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 19 18:49:55.030 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Nov 19 18:49:55.069 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 19 18:49:55.090 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 19 18:49:55.455 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 19 18:49:55.461 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 19 18:49:55.595 VM: VM Ghost shutdown.
+Nov 19 18:49:55.598 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 19 18:49:55.598 VM: VM Ghost destroyed.
+Nov 19 18:49:55.610 HYPERVISOR: exec_cmd: vm set_ghost_status BR 2 
+Nov 19 18:49:55.614 HYPERVISOR: exec_cmd: vm set_ghost_file BR c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 19 18:49:55.619 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 18:49:55.628 HYPERVISOR: exec_cmd: vm start BR 
+Nov 19 19:06:08.106 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 19:06:08.126 HYPERVISOR: exec_cmd: vm stop BR 
+Nov 19 19:06:08.241 VM: VM BR shutdown.
+Nov 19 19:06:08.285 HYPERVISOR: exec_cmd: vm extract_config BR 
+Nov 19 19:06:18.529 HYPERVISOR: exec_cmd: vm get_status BR 
+Nov 19 19:06:18.555 HYPERVISOR: exec_cmd: vm extract_config BR 
+Nov 19 19:06:18.580 HYPERVISOR: exec_cmd: vm delete BR 
+Nov 19 19:06:18.580 VM: VM BR destroyed.
+Nov 19 19:06:18.600 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 19:06:19.046 HYPERVISOR: Stopped.
+Nov 19 19:06:19.046 GENERAL: reset done.

@@ -1,0 +1,49 @@
+Nov 19 12:28:04.579 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Nov 19 12:28:04.581 HYPERVISOR: Started on IP = 192.168.232.1, TCP port = 63796.
+Nov 19 12:28:04.640 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 19 12:28:04.661 HYPERVISOR: exec_cmd: hypervisor working_dir D:/Dropbox/Universidad/Tercero/ATR/GNS3/projects/6RD_EXAMPLE_V1\project-files\dynamips 
+Nov 19 12:28:04.869 GENERAL: working_dir=D:/Dropbox/Universidad/Tercero/ATR/GNS3/projects/6RD_EXAMPLE_V1\project-files\dynamips
+Nov 19 12:28:04.879 HYPERVISOR: exec_cmd: vm create CPE1 4 c7200 
+Nov 19 12:28:04.891 VM: VM CPE1 created.
+Nov 19 12:28:04.916 HYPERVISOR: exec_cmd: vm set_con_tcp_port CPE1 5003 
+Nov 19 12:28:04.937 HYPERVISOR: exec_cmd: c7200 get_mac_addr CPE1 
+Nov 19 12:28:04.960 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:04.981 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-FE 
+Nov 19 12:28:05.003 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.023 HYPERVISOR: exec_cmd: vm slot_remove_binding CPE1 0 0 
+Nov 19 12:28:05.050 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.070 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 0 0 C7200-IO-2FE 
+Nov 19 12:28:05.132 HYPERVISOR: exec_cmd: vm set_ram CPE1 512 
+Nov 19 12:28:05.158 HYPERVISOR: exec_cmd: vm set_ios CPE1 D:/Dropbox/Universidad/Tercero/ATR/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 19 12:28:05.181 HYPERVISOR: exec_cmd: vm set_nvram CPE1 512 
+Nov 19 12:28:05.201 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.219 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 1 0 PA-FE-TX 
+Nov 19 12:28:05.240 HYPERVISOR: exec_cmd: vm set_exec_area CPE1 64 
+Nov 19 12:28:05.259 HYPERVISOR: exec_cmd: vm set_disk0 CPE1 0 
+Nov 19 12:28:05.282 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.311 HYPERVISOR: exec_cmd: vm slot_add_binding CPE1 2 0 PA-FE-TX 
+Nov 19 12:28:05.338 HYPERVISOR: exec_cmd: c7200 set_mac_addr CPE1 ca04.144c.0000 
+Nov 19 12:28:05.372 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.399 HYPERVISOR: exec_cmd: vm set_idle_pc CPE1 0x61d99154 
+Nov 19 12:28:05.422 HYPERVISOR: exec_cmd: vm set_config CPE1 configs/i4_startup-config.cfg 
+Nov 19 12:28:05.703 HYPERVISOR: exec_cmd: nio create_udp udp-3089e2df-3d13-4e94-b780-1552b52ad246 10005 192.168.232.1 10004 
+Nov 19 12:28:05.725 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 1 udp-3089e2df-3d13-4e94-b780-1552b52ad246 
+Nov 19 12:28:05.751 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:05.783 HYPERVISOR: exec_cmd: nio create_udp udp-1a19aea5-da20-4a36-a51e-67495d9c0dcb 10006 192.168.232.1 10007 
+Nov 19 12:28:05.804 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CPE1 0 0 udp-1a19aea5-da20-4a36-a51e-67495d9c0dcb 
+Nov 19 12:28:05.835 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:10.101 HYPERVISOR: exec_cmd: vm set_ghost_status CPE1 2 
+Nov 19 12:28:10.109 HYPERVISOR: exec_cmd: vm set_ghost_file CPE1 c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Nov 19 12:28:10.114 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:10.122 HYPERVISOR: exec_cmd: vm start CPE1 
+Nov 19 12:28:18.412 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:28:18.414 HYPERVISOR: exec_cmd: vm stop CPE1 
+Nov 19 12:28:18.616 VM: VM CPE1 shutdown.
+Nov 19 12:28:18.648 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 12:30:01.939 HYPERVISOR: exec_cmd: vm get_status CPE1 
+Nov 19 12:30:01.963 HYPERVISOR: exec_cmd: vm extract_config CPE1 
+Nov 19 12:30:01.997 HYPERVISOR: exec_cmd: vm delete CPE1 
+Nov 19 12:30:01.997 VM: VM CPE1 destroyed.
+Nov 19 12:30:02.030 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 19 12:30:02.161 HYPERVISOR: Stopped.
+Nov 19 12:30:02.161 GENERAL: reset done.
