@@ -1,0 +1,55 @@
+Oct 26 16:06:27.481 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 16:06:27.481 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34553.
+Oct 26 16:06:27.505 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 16:06:27.506 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips 
+Oct 26 16:06:27.530 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips
+Oct 26 16:06:27.532 HYPERVISOR: exec_cmd: vm create P2 19 c3745 
+Oct 26 16:06:27.606 VM: VM P2 created.
+Oct 26 16:06:27.607 HYPERVISOR: exec_cmd: vm set_con_tcp_port P2 5003 
+Oct 26 16:06:27.607 HYPERVISOR: exec_cmd: c3745 get_mac_addr P2 
+Oct 26 16:06:27.608 HYPERVISOR: exec_cmd: vm set_ios P2 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 16:06:27.611 HYPERVISOR: exec_cmd: vm set_con_tcp_port P2 5003 
+Oct 26 16:06:27.622 HYPERVISOR: exec_cmd: vm set_nvram P2 256 
+Oct 26 16:06:27.625 HYPERVISOR: exec_cmd: c3745 set_mac_addr P2 c413.6ea6.0000 
+Oct 26 16:06:27.626 HYPERVISOR: exec_cmd: vm set_disk0 P2 0 
+Oct 26 16:06:27.628 HYPERVISOR: exec_cmd: vm set_ram P2 256 
+Oct 26 16:06:27.629 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:06:27.631 HYPERVISOR: exec_cmd: vm set_idle_pc P2 0x62ce7fc4 
+Oct 26 16:06:27.632 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:06:27.633 HYPERVISOR: exec_cmd: vm slot_add_binding P2 1 0 NM-1FE-TX 
+Oct 26 16:06:27.639 HYPERVISOR: exec_cmd: vm set_config P2 configs/i19_startup-config.cfg 
+Oct 26 16:06:28.276 HYPERVISOR: exec_cmd: nio create_udp udp-485b4681-8717-4e17-825b-fb16dd15d35a 10000 127.0.0.1 10001 
+Oct 26 16:06:28.277 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 1 0 udp-485b4681-8717-4e17-825b-fb16dd15d35a 
+Oct 26 16:06:28.278 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:06:28.321 HYPERVISOR: exec_cmd: nio create_udp udp-9044682b-51ab-4a5c-bb43-34e2cbe8a8b4 10004 127.0.0.1 10003 
+Oct 26 16:06:28.323 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 0 1 udp-9044682b-51ab-4a5c-bb43-34e2cbe8a8b4 
+Oct 26 16:06:28.326 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:06:28.405 HYPERVISOR: exec_cmd: nio create_udp udp-18386b80-f6f5-4d47-a557-8092cda58f22 10006 127.0.0.1 10007 
+Oct 26 16:06:28.409 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P2 0 0 udp-18386b80-f6f5-4d47-a557-8092cda58f22 
+Oct 26 16:06:28.410 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:11:52.836 HYPERVISOR: exec_cmd: vm set_ghost_status P2 2 
+Oct 26 16:11:52.847 HYPERVISOR: exec_cmd: vm set_ghost_file P2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 16:11:52.847 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 16:11:52.857 HYPERVISOR: exec_cmd: vm start P2 
+Oct 26 16:24:15.467 HYPERVISOR: exec_cmd: nio bind_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 capture 
+Oct 26 16:24:15.468 HYPERVISOR: exec_cmd: nio setup_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 en10mb /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/captures/P2_FastEthernet0-0_to_P1_FastEthernet1-0.pcap 
+Oct 26 16:38:48.747 HYPERVISOR: exec_cmd: nio unbind_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 
+Oct 26 16:38:56.084 HYPERVISOR: exec_cmd: nio bind_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 capture 
+Oct 26 16:38:56.085 HYPERVISOR: exec_cmd: nio setup_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 en10mb /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/captures/P2_FastEthernet0-0_to_P1_FastEthernet1-0.pcap 
+Oct 26 16:41:34.416 HYPERVISOR: exec_cmd: nio bind_filter udp-485b4681-8717-4e17-825b-fb16dd15d35a 2 capture 
+Oct 26 16:41:34.417 HYPERVISOR: exec_cmd: nio setup_filter udp-485b4681-8717-4e17-825b-fb16dd15d35a 2 en10mb /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/captures/P2_FastEthernet1-0_to_PE4_FastEthernet0-1.pcap 
+Oct 26 16:45:49.618 HYPERVISOR: exec_cmd: nio unbind_filter udp-18386b80-f6f5-4d47-a557-8092cda58f22 2 
+Oct 26 16:45:54.707 HYPERVISOR: exec_cmd: nio unbind_filter udp-485b4681-8717-4e17-825b-fb16dd15d35a 2 
+Oct 26 17:17:02.604 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 17:17:02.605 HYPERVISOR: exec_cmd: vm stop P2 
+Oct 26 17:17:02.732 VM: VM P2 shutdown.
+Oct 26 17:17:02.732 HYPERVISOR: exec_cmd: vm extract_config P2 
+Oct 26 17:17:04.978 HYPERVISOR: exec_cmd: vm extract_config P2 
+Oct 26 17:17:19.728 HYPERVISOR: exec_cmd: vm extract_config P2 
+Oct 26 17:21:46.204 HYPERVISOR: exec_cmd: vm get_status P2 
+Oct 26 17:21:46.213 HYPERVISOR: exec_cmd: vm extract_config P2 
+Oct 26 17:21:46.369 HYPERVISOR: exec_cmd: vm delete P2 
+Oct 26 17:21:46.369 VM: VM P2 destroyed.
+Oct 26 17:21:46.431 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:21:46.599 HYPERVISOR: Stopped.
+Oct 26 17:21:46.599 GENERAL: reset done.

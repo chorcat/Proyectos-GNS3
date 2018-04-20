@@ -1,0 +1,41 @@
+Oct 26 16:06:27.905 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 16:06:27.905 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41256.
+Oct 26 16:06:27.912 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 16:06:27.912 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips 
+Oct 26 16:06:27.912 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips
+Oct 26 16:06:27.912 HYPERVISOR: exec_cmd: vm create IPv6_3 9 c3745 
+Oct 26 16:06:27.958 VM: VM IPv6_3 created.
+Oct 26 16:06:27.967 HYPERVISOR: exec_cmd: vm set_con_tcp_port IPv6_3 5012 
+Oct 26 16:06:27.969 HYPERVISOR: exec_cmd: c3745 get_mac_addr IPv6_3 
+Oct 26 16:06:27.970 HYPERVISOR: exec_cmd: vm set_ios IPv6_3 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 16:06:27.972 HYPERVISOR: exec_cmd: vm set_nvram IPv6_3 256 
+Oct 26 16:06:27.973 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 16:06:27.974 HYPERVISOR: exec_cmd: vm set_idle_pc IPv6_3 0x62ce7fc4 
+Oct 26 16:06:27.976 HYPERVISOR: exec_cmd: c3745 set_mac_addr IPv6_3 c409.68d7.0000 
+Oct 26 16:06:27.977 HYPERVISOR: exec_cmd: vm set_disk0 IPv6_3 0 
+Oct 26 16:06:27.980 HYPERVISOR: exec_cmd: vm set_ram IPv6_3 256 
+Oct 26 16:06:27.982 HYPERVISOR: exec_cmd: vm set_con_tcp_port IPv6_3 5012 
+Oct 26 16:06:27.989 HYPERVISOR: exec_cmd: vm set_config IPv6_3 configs/i9_startup-config.cfg 
+Oct 26 16:06:28.607 HYPERVISOR: exec_cmd: nio create_udp udp-c8794bfe-737b-4f18-b1af-8f4612597e04 10023 127.0.0.1 10021 
+Oct 26 16:06:28.608 HYPERVISOR: exec_cmd: vm slot_add_nio_binding IPv6_3 0 0 udp-c8794bfe-737b-4f18-b1af-8f4612597e04 
+Oct 26 16:06:28.609 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 16:06:28.618 HYPERVISOR: exec_cmd: nio create_udp udp-5d41f5ae-3180-4f64-86b2-25fd5356ae7b 10025 127.0.0.1 10024 
+Oct 26 16:06:28.620 HYPERVISOR: exec_cmd: vm slot_add_nio_binding IPv6_3 0 1 udp-5d41f5ae-3180-4f64-86b2-25fd5356ae7b 
+Oct 26 16:06:28.622 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 16:46:25.902 HYPERVISOR: exec_cmd: vm set_ghost_status IPv6_3 2 
+Oct 26 16:46:25.905 HYPERVISOR: exec_cmd: vm set_ghost_file IPv6_3 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 16:46:25.906 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 16:46:25.932 HYPERVISOR: exec_cmd: vm start IPv6_3 
+Oct 26 17:17:02.255 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 17:17:02.258 HYPERVISOR: exec_cmd: vm stop IPv6_3 
+Oct 26 17:17:02.352 VM: VM IPv6_3 shutdown.
+Oct 26 17:17:02.361 HYPERVISOR: exec_cmd: vm extract_config IPv6_3 
+Oct 26 17:17:05.000 HYPERVISOR: exec_cmd: vm extract_config IPv6_3 
+Oct 26 17:17:19.924 HYPERVISOR: exec_cmd: vm extract_config IPv6_3 
+Oct 26 17:21:46.205 HYPERVISOR: exec_cmd: vm get_status IPv6_3 
+Oct 26 17:21:46.213 HYPERVISOR: exec_cmd: vm extract_config IPv6_3 
+Oct 26 17:21:46.408 HYPERVISOR: exec_cmd: vm delete IPv6_3 
+Oct 26 17:21:46.408 VM: VM IPv6_3 destroyed.
+Oct 26 17:21:46.432 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:21:46.599 HYPERVISOR: Stopped.
+Oct 26 17:21:46.599 GENERAL: reset done.

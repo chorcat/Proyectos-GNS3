@@ -1,0 +1,44 @@
+Sep 28 17:11:51.693 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Sep 28 17:11:51.694 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48691.
+Sep 28 17:11:51.703 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 28 17:11:51.704 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica2/project-files/dynamips 
+Sep 28 17:11:51.705 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica2/project-files/dynamips
+Sep 28 17:11:51.706 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Sep 28 17:11:51.712 VM: VM R3 created.
+Sep 28 17:11:51.713 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Sep 28 17:11:51.714 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Sep 28 17:11:51.714 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Sep 28 17:11:51.715 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 28 17:11:51.716 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-16ESW 
+Sep 28 17:11:51.717 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Sep 28 17:11:51.718 HYPERVISOR: exec_cmd: vm set_ios R3 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Sep 28 17:11:51.718 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Sep 28 17:11:51.719 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 28 17:11:51.719 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x62ce7fc4 
+Sep 28 17:11:51.725 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Sep 28 17:12:08.305 HYPERVISOR: exec_cmd: vm rename R3 PC3 
+Sep 28 17:13:01.203 HYPERVISOR: exec_cmd: nio create_udp udp-dd9bbf4f-2efa-4b3e-8197-a5321e91e2de 10004 127.0.0.1 10005 
+Sep 28 17:13:01.207 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 1 3 udp-dd9bbf4f-2efa-4b3e-8197-a5321e91e2de 
+Sep 28 17:13:01.208 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:13:05.343 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:13:05.343 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PC3 1 3 
+Sep 28 17:13:05.344 HYPERVISOR: exec_cmd: nio delete udp-dd9bbf4f-2efa-4b3e-8197-a5321e91e2de 
+Sep 28 17:13:22.878 HYPERVISOR: exec_cmd: nio create_udp udp-1ae29ce1-a9f6-45c4-9efe-879055659268 10004 127.0.0.1 10005 
+Sep 28 17:13:22.882 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC3 0 0 udp-1ae29ce1-a9f6-45c4-9efe-879055659268 
+Sep 28 17:13:22.883 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:14:13.117 HYPERVISOR: exec_cmd: vm set_ghost_status PC3 2 
+Sep 28 17:14:13.137 HYPERVISOR: exec_cmd: vm set_ghost_file PC3 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Sep 28 17:14:13.138 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:14:13.156 HYPERVISOR: exec_cmd: vm start PC3 
+Sep 28 17:46:45.209 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:46:45.210 HYPERVISOR: exec_cmd: vm stop PC3 
+Sep 28 17:46:45.224 VM: VM PC3 shutdown.
+Sep 28 17:46:45.231 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Sep 28 17:46:51.504 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Sep 28 17:46:54.640 HYPERVISOR: exec_cmd: vm get_status PC3 
+Sep 28 17:46:54.642 HYPERVISOR: exec_cmd: vm extract_config PC3 
+Sep 28 17:46:54.652 HYPERVISOR: exec_cmd: vm delete PC3 
+Sep 28 17:46:54.652 VM: VM PC3 destroyed.
+Sep 28 17:46:54.657 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 28 17:46:54.993 HYPERVISOR: Stopped.
+Sep 28 17:46:54.994 GENERAL: reset done.

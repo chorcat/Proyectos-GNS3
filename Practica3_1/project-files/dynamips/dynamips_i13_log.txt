@@ -1,0 +1,46 @@
+Oct 26 16:06:27.882 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 16:06:27.882 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 42145.
+Oct 26 16:06:27.892 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 16:06:27.892 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips 
+Oct 26 16:06:27.896 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips
+Oct 26 16:06:27.898 HYPERVISOR: exec_cmd: vm create IPV6_1 7 c3745 
+Oct 26 16:06:27.956 VM: VM IPV6_1 created.
+Oct 26 16:06:27.967 HYPERVISOR: exec_cmd: vm set_con_tcp_port IPV6_1 5011 
+Oct 26 16:06:27.968 HYPERVISOR: exec_cmd: c3745 get_mac_addr IPV6_1 
+Oct 26 16:06:27.970 HYPERVISOR: exec_cmd: vm set_ios IPV6_1 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 16:06:27.971 HYPERVISOR: exec_cmd: vm set_con_tcp_port IPV6_1 5011 
+Oct 26 16:06:27.973 HYPERVISOR: exec_cmd: vm set_nvram IPV6_1 256 
+Oct 26 16:06:27.974 HYPERVISOR: exec_cmd: c3745 set_mac_addr IPV6_1 c407.66ef.0000 
+Oct 26 16:06:27.976 HYPERVISOR: exec_cmd: vm set_disk0 IPV6_1 0 
+Oct 26 16:06:27.977 HYPERVISOR: exec_cmd: vm set_ram IPV6_1 256 
+Oct 26 16:06:27.980 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:06:27.982 HYPERVISOR: exec_cmd: vm set_idle_pc IPV6_1 0x62ce7fc4 
+Oct 26 16:06:27.989 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:06:28.005 HYPERVISOR: exec_cmd: vm slot_add_binding IPV6_1 1 0 NM-1FE-TX 
+Oct 26 16:06:28.031 HYPERVISOR: exec_cmd: vm set_config IPV6_1 configs/i7_startup-config.cfg 
+Oct 26 16:06:28.630 HYPERVISOR: exec_cmd: nio create_udp udp-3c3596df-5a92-4944-a6cf-b9619997cf7d 10026 127.0.0.1 10028 
+Oct 26 16:06:28.630 HYPERVISOR: exec_cmd: vm slot_add_nio_binding IPV6_1 0 0 udp-3c3596df-5a92-4944-a6cf-b9619997cf7d 
+Oct 26 16:06:28.631 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:06:28.657 HYPERVISOR: exec_cmd: nio create_udp udp-96495402-0fdd-4e24-b43b-bbd58ea25b30 10027 127.0.0.1 10029 
+Oct 26 16:06:28.657 HYPERVISOR: exec_cmd: vm slot_add_nio_binding IPV6_1 0 1 udp-96495402-0fdd-4e24-b43b-bbd58ea25b30 
+Oct 26 16:06:28.658 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:06:28.667 HYPERVISOR: exec_cmd: nio create_udp udp-85a089d0-e15b-4800-8ec0-593b679497dc 10030 127.0.0.1 10031 
+Oct 26 16:06:28.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding IPV6_1 1 0 udp-85a089d0-e15b-4800-8ec0-593b679497dc 
+Oct 26 16:06:28.670 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:46:25.933 HYPERVISOR: exec_cmd: vm set_ghost_status IPV6_1 2 
+Oct 26 16:46:25.934 HYPERVISOR: exec_cmd: vm set_ghost_file IPV6_1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 16:46:25.943 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 16:46:25.952 HYPERVISOR: exec_cmd: vm start IPV6_1 
+Oct 26 17:17:02.512 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 17:17:02.518 HYPERVISOR: exec_cmd: vm stop IPV6_1 
+Oct 26 17:17:02.582 VM: VM IPV6_1 shutdown.
+Oct 26 17:17:02.583 HYPERVISOR: exec_cmd: vm extract_config IPV6_1 
+Oct 26 17:17:04.995 HYPERVISOR: exec_cmd: vm extract_config IPV6_1 
+Oct 26 17:17:19.874 HYPERVISOR: exec_cmd: vm extract_config IPV6_1 
+Oct 26 17:21:46.203 HYPERVISOR: exec_cmd: vm get_status IPV6_1 
+Oct 26 17:21:46.212 HYPERVISOR: exec_cmd: vm extract_config IPV6_1 
+Oct 26 17:21:46.254 HYPERVISOR: exec_cmd: vm delete IPV6_1 
+Oct 26 17:21:46.254 VM: VM IPV6_1 destroyed.
+Oct 26 17:21:46.430 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:21:46.805 HYPERVISOR: Stopped.
+Oct 26 17:21:46.805 GENERAL: reset done.

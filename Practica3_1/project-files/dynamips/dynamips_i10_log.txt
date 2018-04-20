@@ -1,0 +1,38 @@
+Oct 26 16:06:27.785 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 16:06:27.785 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35959.
+Oct 26 16:06:27.862 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 16:06:27.885 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips 
+Oct 26 16:06:27.885 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips
+Oct 26 16:06:27.888 HYPERVISOR: exec_cmd: vm create PC_111 6 c3745 
+Oct 26 16:06:27.935 VM: VM PC_111 created.
+Oct 26 16:06:27.936 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC_111 5006 
+Oct 26 16:06:27.936 HYPERVISOR: exec_cmd: c3745 get_mac_addr PC_111 
+Oct 26 16:06:27.936 HYPERVISOR: exec_cmd: vm set_ios PC_111 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 16:06:27.937 HYPERVISOR: exec_cmd: vm set_nvram PC_111 256 
+Oct 26 16:06:27.937 HYPERVISOR: exec_cmd: vm get_status PC_111 
+Oct 26 16:06:27.938 HYPERVISOR: exec_cmd: vm set_idle_pc PC_111 0x62ce7fc4 
+Oct 26 16:06:27.938 HYPERVISOR: exec_cmd: c3745 set_mac_addr PC_111 c406.65a9.0000 
+Oct 26 16:06:27.938 HYPERVISOR: exec_cmd: vm set_disk0 PC_111 0 
+Oct 26 16:06:27.939 HYPERVISOR: exec_cmd: vm set_ram PC_111 256 
+Oct 26 16:06:27.939 HYPERVISOR: exec_cmd: vm set_con_tcp_port PC_111 5006 
+Oct 26 16:06:27.940 HYPERVISOR: exec_cmd: vm set_config PC_111 configs/i6_startup-config.cfg 
+Oct 26 16:06:28.509 HYPERVISOR: exec_cmd: nio create_udp udp-c8df2500-376e-466c-a342-818899bd67c4 10014 127.0.0.1 10015 
+Oct 26 16:06:28.509 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC_111 0 0 udp-c8df2500-376e-466c-a342-818899bd67c4 
+Oct 26 16:06:28.510 HYPERVISOR: exec_cmd: vm get_status PC_111 
+Oct 26 16:46:25.953 HYPERVISOR: exec_cmd: vm set_ghost_status PC_111 2 
+Oct 26 16:46:25.953 HYPERVISOR: exec_cmd: vm set_ghost_file PC_111 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 16:46:25.958 HYPERVISOR: exec_cmd: vm get_status PC_111 
+Oct 26 16:46:25.963 HYPERVISOR: exec_cmd: vm start PC_111 
+Oct 26 17:17:02.512 HYPERVISOR: exec_cmd: vm get_status PC_111 
+Oct 26 17:17:02.518 HYPERVISOR: exec_cmd: vm stop PC_111 
+Oct 26 17:17:02.556 VM: VM PC_111 shutdown.
+Oct 26 17:17:02.557 HYPERVISOR: exec_cmd: vm extract_config PC_111 
+Oct 26 17:17:05.005 HYPERVISOR: exec_cmd: vm extract_config PC_111 
+Oct 26 17:17:19.974 HYPERVISOR: exec_cmd: vm extract_config PC_111 
+Oct 26 17:21:46.205 HYPERVISOR: exec_cmd: vm get_status PC_111 
+Oct 26 17:21:46.213 HYPERVISOR: exec_cmd: vm extract_config PC_111 
+Oct 26 17:21:46.388 HYPERVISOR: exec_cmd: vm delete PC_111 
+Oct 26 17:21:46.389 VM: VM PC_111 destroyed.
+Oct 26 17:21:46.432 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:21:46.439 HYPERVISOR: Stopped.
+Oct 26 17:21:46.439 GENERAL: reset done.

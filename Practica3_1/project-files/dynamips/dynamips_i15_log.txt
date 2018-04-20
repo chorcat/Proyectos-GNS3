@@ -1,0 +1,44 @@
+Oct 26 16:06:27.974 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Oct 26 16:06:27.974 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59051.
+Oct 26 16:06:28.017 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 26 16:06:28.033 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips 
+Oct 26 16:06:28.033 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/dynamips
+Oct 26 16:06:28.046 HYPERVISOR: exec_cmd: vm create PE1 12 c3745 
+Oct 26 16:06:28.085 VM: VM PE1 created.
+Oct 26 16:06:28.086 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE1 5013 
+Oct 26 16:06:28.086 HYPERVISOR: exec_cmd: c3745 get_mac_addr PE1 
+Oct 26 16:06:28.088 HYPERVISOR: exec_cmd: vm set_ios PE1 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Oct 26 16:06:28.089 HYPERVISOR: exec_cmd: vm set_nvram PE1 256 
+Oct 26 16:06:28.090 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 16:06:28.090 HYPERVISOR: exec_cmd: vm set_idle_pc PE1 0x62ce7fc4 
+Oct 26 16:06:28.090 HYPERVISOR: exec_cmd: c3745 set_mac_addr PE1 c40c.6b91.0000 
+Oct 26 16:06:28.091 HYPERVISOR: exec_cmd: vm set_disk0 PE1 0 
+Oct 26 16:06:28.091 HYPERVISOR: exec_cmd: vm set_ram PE1 256 
+Oct 26 16:06:28.092 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE1 5013 
+Oct 26 16:06:28.099 HYPERVISOR: exec_cmd: vm set_config PE1 configs/i12_startup-config.cfg 
+Oct 26 16:06:28.674 HYPERVISOR: exec_cmd: nio create_udp udp-51b4f6d8-2e2a-441f-acd7-33d10b8e293d 10031 127.0.0.1 10030 
+Oct 26 16:06:28.678 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE1 0 0 udp-51b4f6d8-2e2a-441f-acd7-33d10b8e293d 
+Oct 26 16:06:28.679 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 16:06:28.701 HYPERVISOR: exec_cmd: nio create_udp udp-24cb9a3c-041f-4190-9b5e-29f14451cacd 10033 127.0.0.1 10032 
+Oct 26 16:06:28.701 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE1 0 1 udp-24cb9a3c-041f-4190-9b5e-29f14451cacd 
+Oct 26 16:06:28.702 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 16:11:52.824 HYPERVISOR: exec_cmd: vm set_ghost_status PE1 2 
+Oct 26 16:11:52.835 HYPERVISOR: exec_cmd: vm set_ghost_file PE1 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Oct 26 16:11:52.836 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 16:11:52.846 HYPERVISOR: exec_cmd: vm start PE1 
+Oct 26 16:23:33.231 HYPERVISOR: exec_cmd: nio bind_filter udp-24cb9a3c-041f-4190-9b5e-29f14451cacd 2 capture 
+Oct 26 16:23:33.231 HYPERVISOR: exec_cmd: nio setup_filter udp-24cb9a3c-041f-4190-9b5e-29f14451cacd 2 en10mb /home/eetlabs.local/atr28/GNS3/projects/Practica3_1/project-files/captures/PE1_FastEthernet0-1_to_P1_FastEthernet0-0.pcap 
+Oct 26 16:24:02.214 HYPERVISOR: exec_cmd: nio unbind_filter udp-24cb9a3c-041f-4190-9b5e-29f14451cacd 2 
+Oct 26 17:17:02.257 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 17:17:02.262 HYPERVISOR: exec_cmd: vm stop PE1 
+Oct 26 17:17:02.349 VM: VM PE1 shutdown.
+Oct 26 17:17:02.360 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Oct 26 17:17:05.016 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Oct 26 17:17:20.078 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Oct 26 17:21:46.202 HYPERVISOR: exec_cmd: vm get_status PE1 
+Oct 26 17:21:46.212 HYPERVISOR: exec_cmd: vm extract_config PE1 
+Oct 26 17:21:46.274 HYPERVISOR: exec_cmd: vm delete PE1 
+Oct 26 17:21:46.274 VM: VM PE1 destroyed.
+Oct 26 17:21:46.430 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 26 17:21:46.910 HYPERVISOR: Stopped.
+Oct 26 17:21:46.910 GENERAL: reset done.

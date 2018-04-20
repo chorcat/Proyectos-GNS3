@@ -1,0 +1,57 @@
+Sep 28 17:11:50.220 HYPERVISOR: Release 0.2.16-amd64/Linux (tag 2015060118)
+Sep 28 17:11:50.220 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49292.
+Sep 28 17:11:50.226 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 28 17:11:50.226 HYPERVISOR: exec_cmd: hypervisor working_dir /home/eetlabs.local/atr28/GNS3/projects/Practica2/project-files/dynamips 
+Sep 28 17:11:50.227 GENERAL: working_dir=/home/eetlabs.local/atr28/GNS3/projects/Practica2/project-files/dynamips
+Sep 28 17:11:50.227 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Sep 28 17:11:50.233 VM: VM R2 created.
+Sep 28 17:11:50.234 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Sep 28 17:11:50.234 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Sep 28 17:11:50.234 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Sep 28 17:11:50.235 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 28 17:11:50.235 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Sep 28 17:11:50.235 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Sep 28 17:11:50.236 HYPERVISOR: exec_cmd: vm set_ios R2 /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Sep 28 17:11:50.236 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Sep 28 17:11:50.237 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 28 17:11:50.237 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x62ce7fc4 
+Sep 28 17:11:50.242 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Sep 28 17:12:05.228 HYPERVISOR: exec_cmd: vm rename R2 PC2 
+Sep 28 17:12:51.061 HYPERVISOR: exec_cmd: nio create_udp udp-3cedb115-9dcd-4993-8c79-055514ee8fbb 10002 127.0.0.1 10003 
+Sep 28 17:12:51.065 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC2 1 2 udp-3cedb115-9dcd-4993-8c79-055514ee8fbb 
+Sep 28 17:12:51.066 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:13:08.051 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:13:08.051 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PC2 1 2 
+Sep 28 17:13:08.052 HYPERVISOR: exec_cmd: nio delete udp-3cedb115-9dcd-4993-8c79-055514ee8fbb 
+Sep 28 17:13:18.321 HYPERVISOR: exec_cmd: nio create_udp udp-73bfa6c6-f4c5-450e-a903-56b41824225a 10002 127.0.0.1 10003 
+Sep 28 17:13:18.324 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PC2 0 0 udp-73bfa6c6-f4c5-450e-a903-56b41824225a 
+Sep 28 17:13:18.325 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:13:27.704 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Sep 28 17:13:27.763 VM: VM Ghost created.
+Sep 28 17:13:28.061 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/eetlabs.local/atr28/Escritorio/c3745-adventerprisek9-mz.124-25d.image 
+Sep 28 17:13:28.062 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 28 17:13:28.062 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Sep 28 17:13:28.063 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Sep 28 17:13:28.063 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 28 17:13:28.097 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 28 17:14:11.846 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 28 17:14:11.981 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 28 17:14:12.969 VM: VM Ghost shutdown.
+Sep 28 17:14:12.970 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 28 17:14:12.970 VM: VM Ghost destroyed.
+Sep 28 17:14:13.105 HYPERVISOR: exec_cmd: vm set_ghost_status PC2 2 
+Sep 28 17:14:13.105 HYPERVISOR: exec_cmd: vm set_ghost_file PC2 c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Sep 28 17:14:13.106 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:14:13.116 HYPERVISOR: exec_cmd: vm start PC2 
+Sep 28 17:46:45.211 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:46:45.211 HYPERVISOR: exec_cmd: vm stop PC2 
+Sep 28 17:46:45.248 VM: VM PC2 shutdown.
+Sep 28 17:46:45.255 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Sep 28 17:46:51.499 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Sep 28 17:46:54.641 HYPERVISOR: exec_cmd: vm get_status PC2 
+Sep 28 17:46:54.642 HYPERVISOR: exec_cmd: vm extract_config PC2 
+Sep 28 17:46:54.648 HYPERVISOR: exec_cmd: vm delete PC2 
+Sep 28 17:46:54.648 VM: VM PC2 destroyed.
+Sep 28 17:46:54.656 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 28 17:46:55.004 HYPERVISOR: Stopped.
+Sep 28 17:46:55.004 GENERAL: reset done.
